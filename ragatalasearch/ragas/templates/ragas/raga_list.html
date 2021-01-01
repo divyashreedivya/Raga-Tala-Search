@@ -1,0 +1,40 @@
+{% extends 'base_bootstrap.html' %}
+{% load static %}
+{% block head %}
+<title>Raga Tala Search | Search by name</title>
+<link rel="stylesheet" href="{% static 'ragas/ragas.css' %}"/>
+{% endblock %}
+{% block body %}
+      <div class="container-fluid">
+       <!-- <a href="{% url 'ragas:search' %}">Back</a>-->
+        <h1>Search raga by name</h1>
+        <a href="{% url 'ragas:name' %}">Clear</i></a></button>
+        <br><br>
+        <form>
+           <div class="row">
+             <div class="col-xs-9 txt">
+            <input class="form-control" type="text" placeholder="Search.." name="search"
+            {% if search %} value="{{ search }}" {% endif %}>
+            </div>
+            <div class="col-xs-2 bts">
+            <button class="btn btn-n" type="submit">Search</button>
+            </div>
+           </div>
+          </form>
+          <br>
+          {% if search %}
+              {% if raga_list %}
+            
+              <ul class="ul-raga">
+                  {% for raga in raga_list %}
+                  <li class="li-raga">
+                    <a href ="{% url 'ragas:raga_detail' raga.id %}">{{raga.name}}</a>
+                  </li>
+                  {% endfor %}
+              </ul>
+              {% else %}
+                  <p>No ragas</p>
+              {% endif %}    
+          {% endif %}
+          </div>
+{% endblock %}

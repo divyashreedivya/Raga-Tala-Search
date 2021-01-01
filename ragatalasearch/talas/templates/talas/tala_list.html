@@ -1,0 +1,35 @@
+{% extends 'base_bootstrap.html' %}
+{% load static %}
+{% block head %}
+    <title>Raga Tala Search | Search Tala by aksharas</title>
+    <link rel="stylesheet" href="{% static 'talas/talas.css' %}">
+{% endblock %}
+{% block body %}
+<div class="container-fluid">
+<h1>Search by Number of aksharas in a tala</h1>
+<form>
+    <div class="row">
+    <div class="col-xs-9 txt">    
+    <input type="number" class="form-control" placeholder="Enter the aksharas" name="search"
+    {% if search %} value="{{search}}" {% endif %}>
+    </div>
+    <div class="col-xs-3 bts">
+    <button class="btn btn-s" type="submit">Search</button>
+    </div>
+    </div>
+</form>
+{% if search %}
+{% if tala_list %}
+<ul class="ul-tala">
+    {% for tala in tala_list %}
+    <li class="li-tala">
+    <a href="{% url 'talas:tala_ak_detail' tala.id %}">{{tala.name}}</a>
+    </li>
+    {% endfor %}
+</ul>
+{% else %}
+<p>No talas</p>
+{% endif %}
+{% endif %}
+</div>
+{% endblock %}

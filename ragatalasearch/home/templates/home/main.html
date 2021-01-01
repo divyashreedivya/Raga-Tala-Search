@@ -1,0 +1,19 @@
+{% extends 'base_bootstrap.html' %}
+{% load static %}
+{% block head %}
+<title>Raga Tala Search | Home</title>
+{% endblock %}
+
+{% block body %}
+<div class="container-fluid home-div">
+<h1>Welcome to <span class="brand">Raga Tala Search</span>!</h1>
+<p class="home-p">Raga and Tala search made easy!</p>
+<img class="tanpura" src="{% static 'tanpura.jpg' %}" alt="tanpura">
+</div>
+
+<footer>
+    <div>
+        Developed with ❤️ by <a href="https://divyashreedivya.github.io/music-art-portfolio"  target="_blank" rel="noopener noreferrer" >Divyashree</a>
+    </div>
+</footer>
+{% endblock %}

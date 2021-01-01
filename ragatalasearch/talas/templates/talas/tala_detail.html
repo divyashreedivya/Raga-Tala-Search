@@ -1,0 +1,23 @@
+{% extends 'base_bootstrap.html' %}
+{% load static %}
+{% block head %}
+    <title>Raga Tala Search | Tala Detail</title>
+    <link rel="stylesheet" href="{% static 'talas/talas.css' %}"/>
+{% endblock %}    
+{% block body %}
+
+<div class="container-fluid">
+    <button class="btn btn-s" onclick="history.go(-1)">Back</button>
+    <h1>{{tala.name}}</h1>
+    <br>
+    <div class="card">
+        <div class="card-body">
+            <div class="card-text">
+    <p><strong>Angas: </strong>{{tala.angas}}</p>
+    <p><strong>Aksharas: </strong>{{tala.aksharas}}</p>
+    <hr>
+    <p><strong>A tala in the {{tala.category}} system</strong></p>
+    </div>
+    </div></div>
+</div>
+{% endblock %}    

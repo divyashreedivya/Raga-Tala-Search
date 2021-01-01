@@ -1,0 +1,982 @@
+,Raga,Arohanam,Avarohanam
+0,01 Kanakangi,S R1 G1 M1 P D1 N1 S,S N1 D1 P M1 G1 R1 S
+1,Kanakambari,S R1 M1 P D1 S,S N1 D1 P M1 G1 R1 S
+2,Kanakatodi,S R1 G1 M1 P D1 S,S N1 D1 P M1 R1 S
+3,Madhavapriya,S R1 G1 P D1 N1 S,S N1 D1 P G1 R1 S
+4,Karnataka Shuddha Saveri,S R1 M1 P D1 S,S D1 P M1 R1 S
+5,Latantapriya,S R1 G1 M1 P D1 S,S D1 P M1 R1 S
+6,Lavangi,S R1 M1 D1 S,S D1 M1 R1 S
+7,Megha,S R1 M1 P D1 N1 D1 P S,S N1 D1 P M1 R1 S
+8,Rishabhavilasa,S R1 M1 P D1 S,S D1 P M1 R1 M1 R1 S
+9,Sarvashree,S M1 P S,S P M1 S
+10,Suddha Mukhari,S R1 M1 P D1 S,S N1 D1 P M1 G1 R1 S
+11,Tatillatika,S R1 M1 P D1 S,S D1 P M1 R1 S
+12,Vageeshwari,S R1 G1 M1 P D1 S,S D1 M1 P G1 R1 S
+13,02 Rathnangi,S R1 G1 M1 P D1 N2 S,S N2 D1 P M1 G1 R1 S
+14,Phenadhyuti,S R1 M1 P D1 P N2 S,S N2 D1 P M1 G1 R1 S
+15,Ganamukhari,S R1 M1 D1 S,S N2 D1 M1 R1 S
+16,Ratnavarali,S R1 M1 P N2 D1 S,S N2 P M1 R1 G1 R1 S
+17,Revati,S R1 M1 P N2 S,S N2 P M1 R1 S
+18,Shreemani,S R1 G1 P D1 S,S N2 D1 P G1 R1 S
+19,Shreemati,S R1 G1 P D1 S,S N2 D1 P G1 R1 S
+20,Svadhya,S R1 M1 P N2 S,S N2 D1 P M1 R1 S
+21,03 Ganamoorti,S R1 G1 M1 P D1 N3 S,S N3 D1 P M1 G1 R1 S
+22,Ganasamavarali,S R1 M1 P D1 N3 S,S N3 D1 P M1 G1 R1 S
+23,Bhinnapanchamam,S R1 G1 M1 P D1 N3 S,S N3 D1 P M1 G1 R1 S
+24,Nadharanjani,S R1 M1 D1 N3 S,S N3 D1 M1 G1 R1 S
+25,Poorvavarali,S R1 M1 P D1 S,S N3 D1 P M1 G1 R1 S
+26,Samavarali,S R1 M1 P D1 N3 S,S N3 D1 P M1 G1 R1 G1 S
+27,04 Vanaspati,S R1 G1 M1 P D2 N2 S,S N2 D2 P M1 G1 R1 S
+28,Bhanumati,N2 S M1 P N2 S,S N2 D2 P M1 G2 R2 S
+29,Rasali,S R1 M1 P D2 N2 S,S D2 P M1 R1 S
+30,Vanavali,S R1 M1 P D2 N2 S,S D2 P M1 R1 S
+31,Vittalapriya,S R1 M1 P D2 S,S D2 P M1 R1 S
+32,05 Manavati,S R1 G1 M1 P D2 N3 S,S N3 D2 P M1 G1 R1 S
+33,Manoranjani,S R1 M1 P D2 N3 S,S N3 D2 P M1 G1 R1 S
+34,Ghanashyamala,S G1 M1 P D2 S,S D2 N3 P M1 G1 R1 S
+35,Kunjari,S R1 M1 P D2 P S,S N3 D2 P M1 G1 R1 S
+36,06 Tanaroopi,S R1 G1 M1 P D3 N3 S,S N3 D3 P M1 G1 R1 S
+37,Tanukeerti,S R1 M1 P N3 S,S N3 D3 N3 P M1 G1 M1 R1 S
+38,07 Senavati,S R1 G2 M1 P D1 N1 S,S N1 D1 P M1 G2 R1 S
+39,Senagrani,S R1 G2 R1 M1 G2 M1 P N1 D1 S,S N1 D1 P M1 G2 M1 G2 R1 S
+40,Bhogi,S G2 M1 P D1 N1 D1 S,S N1 D1 P M1 G2 S
+41,Chitthakarshani,S R1 G2 M1 D1 S,S D1 M1 G2 R1 S
+42,Navarasa Mala,S R1 G2 M1 P D1 S,S N1 D1 P M1 R1 S
+43,Sindhu Gowri,S R1 G2 M1 P D1 N1 S,S N1 D1 M1 G2 M1 R1 S
+44,08 Hanumatodi,S R1 G2 M1 P D1 N2 S,S N2 D1 P M1 G2 R1 S
+45,Janatodi,S R1 G2 M1 P D1 N2 S,S N2 D1 P M1 G2 R1 S
+46,Amrita Dhanyasi,S R1 G2 M1 P N2 S,S N2 P M1 G2 R1 S
+47,Asaveri,S R1 M1 P D1 S,S N2 S P D1 M1 P R1 G2 R1 S
+48,Bhanuchandrika,S M1 D1 N2 S,S N2 D1 M1 G1 S
+49,Bhadratodi,S R1 G2 M1 D1 S,S N2 D1 P G2 S
+50,Bhoopalam,S R1 G2 P D1 S,S D1 P G2 R1 S
+51,Chandrikatodi,S G2 M1 P D1 S,S D1 P M1 G2 S
+52,Deshikatodi,S G2 M1 P D1 N2 S,S N2 D1 P M1 G2 R1 S
+53,Dhanyasi,S G2 M1 P N2 S,S N2 D1 P M1 G2 R1 S
+54,Divyamalati,S G2 M1 P D1 N2 S,S N2 D1 P M1 G2 S
+55,Ghanta,S G2 R2 M1 P N2 S,S N2 D1 P M1 G2 R1 S
+56,Kalasaveri,S R1 G2 P N2 S,S N2 P G2 R1 S
+57,Kanakasaveri,S R1 M1 P D1 S,S N2 D1 P M1 G2 R1 S
+58,Nagavarali,S R1 G2 M1 P M1 D1 N2 S,S N2 D1 P M1 G2 R1 S
+59,Prabhupriya,S G2 M1 P D1 S,S D1 P M1 G2 S
+60,Punnagatodi,N1 S R1 G2 M1 P,P M1 G2 R1 S N2 D1
+61,Punnagavarali,N2 S R1 G2 M1 P D1 N2,N2 D1 P M1 G2 R1 S N2
+62,Shravanamallika,S G2 M1 P D1 N2 S,S N2 D1 P M1 G2 R1 S
+63,Sowjanya,S R1 M1 D1 S,S D1 M1 R1 S
+64,Shuddha Seemantini,S R1 G2 M1 P D1 S,S D1 P M1 G2 R1 S
+65,Shuddha Todi,S R1 G2 M1 D1 N2 S,S N2 D1 M1 G2 R1 S
+66,Sindhubhairavi,S R2 G2 M1 G2 P D1 N2 S,N2 D1 P M1 G2 R1 S N2 S
+67,Swarnamalli,S G2 M1 P D1 N1 S,S N2 D1 P M1 G2 R1 S
+68,09 Dhenuka,S R1 G2 M1 P D1 N3 S,S N3 D1 P M1 G2 R1 S
+69,Dhunibhinnashadjam,S R1 G2 R1 P M1 P N3 S,S D1 P M1 G2 R1 S
+70,Bhinnashadjam,S R1 G2 R1 P M1 P N3 S,S D1 P M1 G2 R1 S
+71,Mohananata,S G2 M1 P D1 P M1 P N3 S,S N3 P D1 P M1 G2 S
+72,Udayaravichandrika,S G2 M1 P N3 S,S N3 P M1 G2 S
+73,Vasanthatodi,S R1 G2 M1 D1 N3 S,S N3 D1 M1 R1 S
+74,10 Natakapriya,S R1 G2 M1 P D2 N2 S,S N2 D2 P M1 G2 R1 S
+75,Natabharanam,S R1 G2 M1 P D2 N2 S,S N2 D2 P M1 G2 R1 S
+76,Alankarapriya,S R1 G2 M1 D2 N2 S,S N2 D2 M1 G2 R1 S
+77,Bhagyashabari,S R1 G2 M1 D2 N2 S,S N2 D2 M1 G2 R1 S
+78,Deeparamu,S R1 G2 M1 P D2 N2 S,S N2 D2 N2 P M1 G2 R1 S
+79,Gunavati,S R1 M1 P D2 S,S D2 P M1 R1 S
+80,Hindoladeshikam,S M1 R1 G2 M1 P D2 N2 S,S P N2 D2 M1 G2 R1 S
+81,Kanakadri,S R1 G2 P D2 S,S N2 D2 P M1 G2 R1 S
+82,Matangakamini,S G2 M1 P D1 N2 S,S N2 D1 P M1 G2 S
+83,Natyadharana,S R1 M1 P D2 S,S N2 D2 P M1 R1 S
+84,Niranjana,S R1 G2 M1 P D2 S,S N2 D2 P M1 G2 R1 S
+85,Shanthabhashini,S R1 G2 M1 P D2 S,S N2 D2 P M1 S
+86,Shivashakti,S G2 M1 D2 S,S N2 D2 M1 G2 S
+87,11 Kokilapriyaa,S R1 G2 M1 P D2 N3 S,S N3 D2 P M1 G2 R1 S
+88,Kokilaravam,S R1 M1 P D2 N3 S,S N3 D2 P M1 G2 R2 S
+89,Chitramani,S R1 M1 P D2 N3 S,S N3 D2 P M1 G2 R1 S
+90,Jnanachintamani,S R1 M1 D2 N3 S,S N3 D2 P M1 R1 S
+91,Kowmari,S R1 G2 M1 P D2 S,S N3 D2 P M1 G2 R1 S
+92,Shuddha Lalitha,S P M1 D2 N3 S,S N3 S D2 P M1 G2 R1 S
+93,Vardhani,S G2 M1 P M1 P D2 N3 S,S N3 D2 P M1 G2 R1 S
+94,Vasantamalli,S G2 M1 P N3 S,S D2 P M1 G2 S
+95,Vasantanarayani,S R1 G2 M1 P S,S N3 D2 P M1 G2 R1 S
+96,12 Rupavati,S R1 G2 M1 P D3 N3 S,S N3 D3 P M1 G2 R1 S
+97,Rowpyanaka,S M1 P D3 N3 S,S N3 P M1 G2 R1 S
+98,Shyamakalyani,S M1 G2 M1 P D3 N3 S,S N3 P D3 N3 P M1 G2 R1 S
+99,13 Gayakapriya,S R1 G3 M1 P D1 N1 S,S N1 D1 P M1 G3 R1 S
+100,Geya Hejjajji,S R1 M1 G3 M1 P D1 S,S N3 D1 P M1 G3 R1 S
+101,Hejjajji,S R1 G3 M1 P D1 S,S N1 D1 P M1 G3 R1 S
+102,Kalakanti,S R1 G3 M1 D1 N1 S,S N1 D1 P G3 R1 S
+103,Kalkada,S R1 G3 P D1 N1 S S R1 G3 P D1 S,S N1 D1 P G3 R1 S
+104,Kalpanadharini,S G3 M1 P D1 S,S N1 D1 P M1 G3 R1 S
+105,14 Vakulabharanam,S R1 G3 M1 P D1 N2 S,S N2 D1 P M1 G3 R1 S
+106,Vatee Vasantabhairavi,S R1 G3 M1 D1 N2 S,S N2 D1 M1 G3 R1 S
+107,Ahiri,S R1 S G3 M1 P D1 N2 S,S N2 D1 P M1 G3 R1 S
+108,Amudhasurabhi,S M1 G3 M1 P D1 S,S N2 D1 P M1 R1 S
+109,Devipriya,S G3 P N2 S,S N2 D1 P M1 G3 R1 S
+110,Kalindaja,S R1 G3 M1 P N2 S,S N2 P M1 G3 R1 S
+111,Kuvalayabharanam,S R1 G3 M1 D1 N1 S,S N1 D1 M1 G3 R1 S
+112,Sallapa,S G3 M1 D1 N2 S,S N2 D1 M1 G3 S
+113,Soma,S R1 P M1 D1 N2 S,S N2 D1 M1 P M1 G3 R1 S
+114,Surya,S G3 M1 D1 N2 S,S N2 D1 M1 G3 S
+115,Shuddha Kambhoji,S G3 R1 M1 P N2 S,S N2 P M1 G3 R1 S
+116,Vasantabhairavi,S R1 G3 M1 D1 N2 S,S N2 D1 M1 P M1 G3 R1 S
+117,Vasanta Mukhari,S M1 G3 M1 P D1 N2 S,S N2 D1 P M1 G3 R1 S
+118,Vijayollasini,S R1 G3 M1 P M1 D1 N2 S,S N2 D1 P M1 G3 R1 S
+119,15 Mayamalava Gowla,S R1 G3 M1 P D1 N3 S,S N3 D1 P M1 G3 R1 S
+120,Ardhradesi,S R1 G3 M1 P D1 N3 S,S D1 P M1 G3 R1 S
+121,Bhavini,S G3 M1 P D1 N3 S,S N3 D1 P M1 G3 S
+122,Bibhas,S R1 G3 P D1 S,S D1 P M1 R1 S
+123,Bowli,S R1 G3 P D1 S,S N3 D1 P G3 R1 S
+124,Bowli Ramakriya,S R1 G3 P D1 S,S N3 P D1 P M1 G3 R1 S
+125,Charuvardhani,S R1 M1 P D1 N3 S,S D1 P M1 G3 R1 S
+126,Chayagowla,S R1 M1 G3 M1 P N3 S,S N3 D1 P M1 G3 R1 S
+127,Chandrachooda,S M1 G3 M1 P D1 S,S N3 D1 P M1 G3 S
+128,Deshyagowla,S R1 P D1 N3 S,S N3 D1 P R1 S
+129,Devaranji,S M1 P D1 P N3 S,S N3 D1 P M1 S
+130,Ekakshari,S R1 G3 M1 P D1 N3 S,S N1 P M1 R1 G3 M1 R1 S
+131,Ghanasindhu,S M1 G3 M1 P D1 N3 D1 S,S N3 D1 P M1 G3 R1 S
+132,Gowla,S R1 M1 P N3 S,S N3 P M1 R1 G3 M1 R1 S
+133,Gowlipantu,S R1 M1 P N3 S,S N3 D1 P M1 D1 M1 G3 R1 S
+134,Gowri,S R1 M1 P N3 S,S N3 D1 P M1 G3 R1 S
+135,Gummakambhoji,S R1 G3 P D1 N3 S,S N3 D1 P M1 G3 R1 S
+136,Gundakriya,S R1 M1 P N3 S,S N3 P D1 P M1 G3 R1 S
+137,Gurjari,S R1 G3 M1 P D1 N3 S,S D1 N3 P M1 G3 R1 S
+138,Jaganmohini,S G3 M1 P N3 S,S N3 P M1 G3 R1 S
+139,Kalyanakesari,S R1 G3 P D1 S,S D1 P G3 R1 S
+140,Kannadabangala,S R1 M1 G3 M1 D1 P D1 S,S D1 P M1 G3 R1 S
+141,Karnataka Saranga,S R1 G3 M1 P D1 N3 S,S N3 D1 P M1 R1 S
+142,Lalita,S R1 G3 M1 D1 N3 S,S N3 D1 M1 G3 R1 S
+143,Lalitapanchamam,S R1 G3 M1 D1 N3 S,S N3 D1 M1 P M1 G3 R1 S
+144,Malavakurinji,S G3 P D1 N3 S,S N3 D1 M1 R1 S
+145,Malavapanchamam,S R1 G3 M1 P N3 S,S N3 D1 P M1 G3 R1 S
+146,Margadesi,S R1 G3 R1 G3 D1 M1 P D1 S,S D1 P M1 G3 R1 S
+147,Malahari,S R1 M1 P D1 S,S D1 P M1 G3 R1 S
+148,Mallikavasantam,S G3 M1 P N3 S,S N3 D1 P M1 G3 R1 S
+149,Mangalakaishiki,S R1 M1 G3 D1 P S,S N3 D1 P M1 G3 R1 S
+150,Manolayam,S R1 M1 P D1 S,S N3 D1 P M1 R1 S
+151,Maruva,S G3 M1 D1 N3 S,S N3 D1 P G3 M1 G3 R1 S R1 G3 R1 S
+152,Mechabowli,S R1 G3 P D1 S,S N3 D1 P M1 G3 R1 S
+153,Megharanjani,S R1 G3 M1 N3 S,S N3 M1 G3 R1 S
+154,Nadanamakriya,S R1 G3 M1 P D1 N3,N3 D1 P M1 G3 R1 S N3
+155,Padi,S R1 M1 P N3 S,S N3 P D1 P M1 R1 S
+156,Pharaju (Paras),S G3 M1 P D1 N3 S,S N3 D1 P M1 G3 R1 S
+157,Poornalalita,S R1 G3 M1 P D1 S,S D1 P M1 G3 R1 S
+158,Poorvi,S R1 G3 M1 D1 N3 S,S N3 D1 P M1 G3 R1 S
+159,Poorvikavasanta,S M1 G3 M1 D N3 S,S N3 D1 M1 P M1 G3 R1 S
+160,Pratapadhanyasi,S G3 M1 P N3 S,S N3 D1 P M1 G3 R1 S
+161,Prataparanjani,S R1 M1 P D1 N3 S,S N3 D1 P M1 G3 R1 S
+162,Puranirmai,S R1 G3 P D1 S,S N3 D1 P G3 R1 S
+163,Ramakali,S R1 G3 P D1 S,S N3 D1 P M1 G3 R1 S
+164,Ramakriya,S G3 M1 P D1 N3 S,S N3 P D1 P M1 G3 R1 S
+165,Revagupti,S R1 G3 P D1 S,S D1 P G3 R1 S
+166,Rukhmambari,S R1 G3 P N3 S,S N3 P G3 R1 S
+167,Samantadeepara,S R1 G3 M1 P N3 S,S N3 P M1 G3 R1 S
+168,Saranga Nata,S R1 M1 P D1 S,S N3 S D1 P M1 G3 R1 S
+169,Saveri,S R1 M1 P D1 S,S N3 D1 P M1 G3 R1 S
+170,Salanganata,S R1 M1 P D1 S,S D1 P G3 R1 S
+171,Satyavati,S G3 R1 G3 P D1 S,S N3 D1 N3 P D1 P G3 R1 S
+172,Sindhu Ramakriya,S G3 M1 P D1 N3 S,S N3 P M1 G3 R1 G3 S
+173,Surasindhu,S M1 G3 M1 P D1 N3 D1 S,S N3 D1 P M1 R1 G3 R1 S
+174,Tarakagowla,S G3 M1 D1 N3 S,S N3 D1 M1 G3 S
+175,Takka,S R1 S G3 M1 G3 P M1 D1 N3 S,S N3 D1 P M1 G3 R1 S
+176,Ushavali,S R1 M1 P D1 S,S N3 D1 M1 P M1 R1 S
+177,Visharada,S R1 M1 P N3 S,S N3 P M1 R1 S
+178,16 Chakravakam,S R1 G3 M1 P D2 N2 S,S N2 D2 P M1 G3 R1 S
+179,Toyavegavahini,S R1 G3 M1 P D2 N2 S,S N2 D2 P M1 G3 R1 S
+180,Ahir Bhairavi,S R1 G3 M1 P N2 D2 M1 P D2 S,S N2 D2 P M1 P G3 R1 S
+181,Bhakthapriya,S G3 M1 P D2 N2 S,S N2 D2 P M1 R1 M1 G3 S
+182,Bhujangini,S R1 G3 M1 D2 N2 S,S N2 D2 M1 G3 R1 S
+183,Bindhumalini,S G3 R1 G3 M1 P N2 S,S N2 S D2 P G3 M1 P G3 R1 S
+184,Chakranarayani,S R1 M1 P D2 N2 S,S N2 D2 P M1 R1 S
+185,Ghoshini,S M1 G3 M1 P D2 N2 D2 S,S N2 D2 P M1 G3 R1 S
+186,Guhapriya,S R1 G3 M1 P P M1 D2 N2 S,S N2 D2 P M1 G3 S R1 S
+187,Kalavati,S R1 M1 P D2 S,S D2 P M1 G3 S R1 S
+188,Kokila,S R1 G3 M1 D2 N2 S,S N2 D2 M1 G3 R1 S
+189,Malayamarutam,S R1 G3 P D2 N2 S,S N2 D2 P G3 R1 S
+190,Mukthangi,S R1 G3 M1 P D2 N2 S,S D2 N2 P M1 G3 R1 S
+191,Mukundamalini,S R1 G2 P D2 S,S D2 P G2 R1 S
+192,Poornapanchamam,P M1 S R1 S M1 P D2,D2 P M1 G3 R1 S N2
+193,Pravritti,S G3 M1 P D2 N2 S,S N2 D2 P M1 G3 S
+194,Ragamanjari,S R1 M1 P D2 S,S N2 D2 M1 R1 S
+195,Rasikaranjani,S R1 G3 P S,S D2 P G3 R1 S
+196,Rudra Panchami,S G3 M1 D2 N2 S,S N3 D2 M1 G3 R1 S
+197,Shree Nabhomargini,S G3 M1 P D2 N2 S,S D2 P M1 G3 R1 S
+198,Shyamali,S G3 P D2 N2 S,S N2 D2 P G3 R1 S
+199,Subhashini,S D2 N2 D R1 G3 M1 P,M1 G3 R1 S N2 D2 N2 S
+200,Valaji,S G3 P D2 N2 S,S N2 D2 P G3 S
+201,Veenadhari,S R1 G3 P D2 N2 S,S N2 D2 P M1 G3 R1 S
+202,Vegavahini,S R1 G3 M1 D2 N2 D2 S,S N2 D2 P M1 G3 R1 S
+203,17 Sooryakantam,S R1 G3 M1 P D2 N3 S,S N3 D2 P M1 G3 R1 S
+204,Chayavathi,S R1 G3 M1 D2 N3 S,S N3 D2 P M1 G3 R1 S
+205,Bhairavam,S R1 G3 M1 P D2 N3 S,S D2 P M1 G3 R1 S
+206,Haridarpa,S R1 G3 M1 P D2 N3 S,S D2 P M1 R1 S
+207,Jayasamvardhani,S G3 M1 P D2 N3 S,S N3 P M1 G3 R1 S
+208,Jeevantika,S R1 M1 P D2 N3 S,S N3 D2 P M1 R1 S
+209,Kusumamaruta,S M1 P D2 N3 S,S N3 D2 P M1 G3 R1 G3 M1 S
+210,Nagachoodamani,S R1 G3 M1 P D2 S,S D2 N2 D2 P M1 G3 M1 R2 S
+211,Rohini,S R1 G3 M1 M2 D2 N3 S,S N3 D2 M2 M1 G3 R1 S
+212,Samakannada,S R2 M1 G2 M1 P D2 N3 S,S N3 D2 P M1 R1 S
+213,Sowrashtram,S R1 G3 M1 P M1 D2 N3 S,S N3 D2 N2 D2 P M1 G3 R1 S
+214,Suddha Gowla,S R1 M1 P N3 S,S N3 P M1 R1 S
+215,Supradeepam,S R1 M1 P D2 N3 S,S N3 D2 P M1 G3 M1 R1 S
+216,Vasantha,S M1 G3 M1 D2 N3 S,S N3 D2 M1 G3 R1 S
+217,18 Hatakambari,S R1 G3 M1 P D3 N3 S,S N3 D3 P M1 G3 R1 S
+218,Jayashuddhamalavi,S R1 G3 M1 P N3 S,S N3 D3 P M1 G3 R1 S
+219,Hamsanantini,S G3 M1 P S,S P M1 G3 R1 S
+220,Kallola,S P D3 N3 S,S N3 D3 P M1 G3 R1 S
+221,Simhala,S R1 G3 M1 P D3 N3 S,S N3 D3 N3 P M1 G3 R1 S
+222,19 Jhankaradhvani,S R2 G2 M1 P D1 N1 S,S N1 D1 P M1 G2 R2 S
+223,Jhankarabhramari,S R2 G2 M1 P D1 N1 D1 P D1 S,"S N1 D1 P M1 G2 R2 S"
+223,Jhankarabhramari,S R2 G2 M1 P D1 S,"S N1 D1 P M1 G2 R2 S"
+223,Jhankarabhramari,S R2 G2 M1 P D1 N1 D1 S,"S D1 P M1 G2 R2 S"
+223,Jhankarabhramari,S R2 G2 M1 P D1 N1 D1 S,"S N1 D1 P M1 G2 R2 S"
+223,Jhankarabhramari,S G2 R2 G M1 P D1 N1 D1 S,"S N1 D1 P M1 G2 R2 G R2 S"
+223,Jhankarabhramari,S R2 G2 M1 P D1 N1 D1 S,"D1 N1 D1 P M1 G2 R2 S"
+224,Bharati,S R2 G2 M1 P S,S P M1 G2 R2 S
+225,Chittaranjani,S R2 G2 M1 P D1 N1,N1 D1 P M1 G2 R2 S
+226,Jalmika,S R2 G1 M1 P D1 N1 S,S N1 D1 P M1 G1 S R2 S
+227,Lalitabhairavi,S G2 M1 P D1 S,S N1 D1 P M1 G2 R2 S
+228,Poornalalita,S G2 R2 M1 P S,S N1 D1 P M1 G2 R2 S
+228,Poornalalita,S G2 R2 G2 R2 M1 P S,S N1 D1 P M1 G2 R2 S
+228,Poornalalita,S R2 G2 R2 M1 P S,S N1 D1 P M1 G2 R2 S
+228,Poornalalita,S R2 G2 M1 P S,S N1 D1 P M1 G2 R2 S
+228,Poornalalita,S G2 R2 G2 M1 P S,S N1 D1 P M1 G2 R2 S
+229,20 Natabhairavi,S R2 G2 M1 P D1 N2 S,S N2 D1 P M1 G2 R2 S
+230,Nareretigowla,S G2 R2 G2 M1 N2 D1 M1 N2 N2 S,S N2 D1 M1 G2 M1 P M1 G2 R2 S
+231,Abheri (Dikshitar School),S M1 G2 M1 P P S,S N2 D2 P M1 G2 R2 S
+232,Anandabhairavi,S G2 R2 G2 M1 P D2 P S,S N2 D2 P M1 G2 R2 S
+233,Amrithavahini,S R2 M1 P D1 N2 S,S N2 D1 M1 G2 R2 S
+234,Bhairavi,S G2 R2 G2 M1 P D2 N2 S,S N2 D1 P M1 G2 R2 S
+235,Bhuvanagandhari,S R2 M1 P N2 S,S N2 D1 P M1 G2 S
+236,Chapagantarva,S G2 M1 P N2,D1 M1 G2 R2 S N2
+237,Darbari Kanada,N2 S R2 G2 R2 S M1 P D1 N2 S,S D1 N2 P M1 P G2 M1 R2 S
+238,Devakriya,S R2 M1 P N2 S,S N2 D1 N2 P M1 G2 R2 S
+239,Dhanashree,N2 S G2 M1 P N2 S,S N2 D1 P M1 G2 R1 S
+240,Dharmaprakashini,S R2 M1 P N2 S,S N2 D1 M1 G2 R2 S
+241,Dilipika Vasantha,S G2 M1 P D1 P N2 S,S D1 P M1 R2 S
+242,Divyagandhari,S G2 M1 P D1 N2 S,S N2 P M1 G2 S
+243,Gopikavasantam,S R2 G2 M1 P D1 P N2,S N2 D1 P M1 G2 R2 S
+244,Hindolam,S G2 M1 D1 N2 S,S N2 D1 M1 G2 S
+245,Hindolavasanta,S G2 M1 P D1 N2 D1 S,S N2 D1 P M1 D2 M1 G2 S
+246,Indughantarava,S G2 M1 P D1 P,N2 D1 P M1 G2 R2 S N2
+247,Jayanthashri,S G2 M1 D1 N2 S,S N2 D1 M1 P M1 G2 S
+248,Jingala,S R2 G2 M1 P D1 N2 D1 P S,S N2 D1 P M1 G2 R2 S
+249,Jonpuri,S R2 M1 P D1 N2 S,S N2 D1 P M1 G2 R2 S
+250,Katyayani,S R2 G2 P D1 S,S D1 P G2 R2 S
+251,Kanakavasantham,S G2 M1 P N2 D1 S,S N2 D1 P M1 G2 R2 S
+252,Kshanika,S G2 M1 P D1 S,S D1 P M1 G2 S
+253,Manji,S R2 G2 M1 P D2 N2 S,S N2 D1 P M1 P M1 P G2 R2 S
+254,Mahati cf. Mela 28&43 (Mahathi),S G2 P D1 N2 S,S N2 P G2 R2 S
+255,Malkosh,S G2 M1 D1 N2 S,S N2 D1 M1 G2 S
+256,mArgahindOLaM,S R2 G2 M1 P D2 N2 S,S N2 D2 P M1 G2 S
+257,Nagagandhari,S R2 M1 G2 M1 P D1 N2 S,S N2 D1 P M1 G2 R2 S
+258,Navarathna Vilasam,S R2 G2 M1 P D1 P S,S D1 P M1 G2 M1 R2 S
+259,Nilamati,S G2 M1 P D1 N2 S,S N2 D1 M1 G2 S
+260,Nilaveni,S R2 G2 M1 P D1 N2 D1 S,S D1 P M1 G2 R2 S
+261,Poornashadjam,S R2 G2 M1 N2 N2 S,S N2 P M1 G2 R2 S
+261,Poornashadjam,S R2 G2 M1 N2 S,S N2 P M1 G2 R2 S
+262,Rajarajeshwari,S R2 M1 P D1 S,S N2 D1 P M1 G2 R2 S
+263,Saramati,S R2 G2 M1 P D1 N2 S,S N2 D1 M1 G2 S
+264,Saranga Kapi,S R1 P M1 R1 P R1 M1 P N2 S,S N2 D1 P M1 G2 R1 S
+265,Sharadapriya,S R2 G2 P N2 S,S N2 P G2 R2 S
+266,Shree Navarasachandrika,S R2 G2 M1 P D1 S,S D1 P M1 G2 R2 S
+267,Sindhu Dhanyasi,S G2 M1 P N2 S,S N2 D1 M1 P M1 G2 R2 S
+268,Shuddha Desi,S R2 G2 R2 M1 P D1 N2 S,S N2 D1 P M1 G2 R2 S
+269,Shuddha Salavi,S G2 M1 P N2 S,S N2 P M1 R2 S
+270,Sukumari,S G2 M1 P N2 D1 N2 S,S N2 P M1 G2 M1 R2 S
+271,Sushama,S R2 M1 P D1 S,S D1 P M1 R2 S
+272,Sutradhari,(Also 27) S R2 M1 P D1 S,S D1 P M1 R2 S
+273,Tarkshika,S R2 M1 P N2 S,S N2 D1 P M1 R2 G2 R2 S
+274,Udayaraga,S G2 M1 P N2 S,S N2 P M1 G2 S
+275,Vasantavarali,S R2 M1 P D1 S,S N2 D1 P G2 R2 S
+276,21 Keeravani,S R2 G2 M1 P D1 N3 S,S N3 D1 P M1 G2 R2 S
+277,Keeranavali,S R2 G2 M1 P D1 N3 S,S P M1 G2 R2 S
+278,Aymmukhan,S G2 M1 P D1 N3 S,S N3 D1 P M1 G2 S
+279,Bhanupriya,S R2 G2 D1 N3 S,S N3 D1 G2 R2 S
+280,Chandrika,S R2 G2 P D1 N3 S,S N3 D1 P G2 R2 S
+281,Gaganabhoopalam,S M1 G2 M1 P D1 N3,S N3 D1 M1 G2 R2 S
+282,Hamsapancama,S G2 M1 P N3 D1 N3 P S,S N3 D1 M1 G2 R2 S
+283,Hamsavahini,S R2 M1 P D1 N3 S,S N3 D1 P M1 R2 S
+284,Jayashree,S R2 G2 M1 P D1 N3 D1 S,S N3 D1 P M1 G2 R2 S
+285,"Kadaram (Chandrakosh, Chandrakauns, Chandrakaush)",S G2 M1 D1 N3 S,S N3 D1 M1 G2 S
+286,Kalyana Vasantam,S G2 M1 D1 N3 S,S N3 D1 P M1 G2 R2 S
+287,Kusumavali,S G2 M1 P D1 S,S N3 D1 P M1 G2 M1 R1 S
+288,Madhavi,S M1 G2 M1 P D1 N3 S,S N3 D1 P M1 S M1 G2 R1 S
+289,Mishramanolayam,S R2 M1 P D1 S,S D2 D1 P M1 R2 S
+290,Priyadarshani,S R2 M1 D1 N3 S,S N3 D1 M1 R2 S
+291,Rishipriya,S R2 G2 M1 P D1 N3 S,S N3 P M1 G2 R2 S
+292,Samapriya,S R2 M1 P D1 S,S D1 P M1 R2 S
+293,Shrothasvini,S G2 M1 P N3 S,S N3 P M1 G2 S
+294,Vasanthamanohari,S R2 G2 M1 D1 N3 S,S N3 D1 M1 G2 R2 S
+295,22 Kharaharapriya,S R2 G2 M1 P D2 N2 S,S N2 D2 P M1 G2 R2 S
+296,Shree,S R2 M1 P N2 S,S N2 P D2 N2 P M1 R2 G2 R2 S
+297,Andolika,S R2 M1 P N2 S,S N2 D2 M1 R2 S
+298,Abheri,S G2 M1 P N2 S,S N2 D2 P M1 G2 R2 S
+299,Abhogi,S R2 G2 M1 D2 S,S D2 M1 G2 R2 S
+300,Adi Kapi,S R2 M1 G2 M1 P D2 N2 S,S N2 D2 P M1 G2 R2 S
+301,Aryamati,S R2 G2 P D2 S,S N2 D2 P D2 M1 G2 R2 S
+302,Agnikopa,S G2 M1 P N2 S,S N2 P M1 G2 R2 S
+303,Balachandrika,S G2 M1 P D2 N2 S,S N2 D2 M1 G2 R2 S
+304,Basant Bahar,S M2 P G3 M2 N3 D1 N3 S,R2 S N2 D2 P M1 G2 M1 G2 R2 S
+305,Bhageshri,S G2 M1 D2 N2 S,S N2 D2 M1 P D2 G2 M1 R2 S
+306,Bhagavatapriya,S R2 G2 M1 P N2 S,S N2 D2 P M1 G2 R2 S
+307,Bhagavathpriya,S R2 G2 M1 R2 M1 P D2 N2 S,S N2 D2 P M1 R2 S
+308,Bhimpalas,N2 S G2 M1 P N2 S,S N2 D2 P M1 G2 R2 S
+309,Brindavana Saranga,S R2 M1 P N3 S,S N2 P M1 R2 G2 R2 S
+310,Brindavani,S R2 M1 P N3 S,S N2 P M1 R2 S
+311,Chakrapradipta,S R2 G2 M1 P M1 D2 N2 S,S N2 D2 M1 G2 S
+312,Chittaranjani,S R2 G2 M1 P D2 N2,N2 D2 P M1 G2 R2 S
+313,Darbar,S R2 M1 P D2 N2 S,R2 S N2 S D2 P M1 R2 G2 G2 R2 S
+314,Dayavati,S R2 G2 P N2 S,S N2 P M1 G2 S
+315,Devamruthavarshani,S R2 G2 M1 N2 D2 N2 S,S N2 D2 P M1 G2 R2 S
+316,Deva Manohari,S R2 M1 P D2 N2 S,S N2 D2 N2 P M1 R2 S
+317,Dhanakapi,S R2 M1 P N2 S (Varies),S N2 D2 N2 P M1 G2 R2 S
+318,Dilipika,S R2 G2 M1 P N2 D2 N2 P D2 N2 S,S N2 D2 P M1 G2 R2 S
+319,Durga,S R2 M1 D2 P D2 S,S D2 P M1 R2 S
+320,Gowla Kannada,S R2 G2 M1 P D2 N2 S,S N2 P M1 G2 S
+321,Hamsa abheri,S G2 P M1 P N2 S,S N2 D2 P M1 G2 S
+322,Haridasapriya,S P M1 G3 M1 P N2 S,S N2 D2 N2 P M1 G2 R2 S
+323,Harinarayani,S R2 G2 M1 P M1 D2 N2 S,S N2 P M1 G2 R2 S
+324,Hindustani Kapi,S R2 M1 P N2 S,S N2 D2 N2 P M1 G2 M1 D2 P G2 R2 S N2 S
+325,Huseni,S R2 G2 M1 P N2 D2 N2 S,S N2 D1 P M1 G2 R2 S
+325,Huseni,S R2 G3 M1 P N3 D2 M1 P N3 S,S N3 S P D2 M1 P G3 R2 S
+326,Jatadhari,S R2 M1 P D2 N2 S,S N2 D2 P M1 R2 S
+327,Jayamanohari,S R2 G2 M1 D2 S,S N2 D2 M1 G2 R2 S
+328,Jayanarayani,S R2 G2 M1 P D2 S,S N2 D2 P M1 G2 R2 S
+329,Jayanthasena,S G2 M1 P D2 S,S N2 D2 P M1 G2 S
+330,Kanada,S R2 G2 M1 D2 N2 S,S N2 P M1 G2 M1 R2 S
+331,Kapi,S R2 M1 P N3 S,S N2 D2 N2 P M1 G2 R2 S
+332,Kapijingala,S N2 S R2 G2 M1,M1 G2 R2 S N2 D2 N2 S
+333,Kalanidhi,S R2 G2 M1 S P M1 D2 N2 S,S N2 D2 P M1 G2 R2 S
+334,Kalika,S R2 G2 P D2 N2 S,S N2 D2 P G2 R2 S
+335,Kannadagowla,S R2 G2 M1 P N2 S,S N2 D2 P M1 G2 S
+336,Karnataka Hindolam,S G2 M1 D2 N2 S,S N2 D2 M1 G2 S
+337,Karnataka Kapi,S R2 G2 M1 P D2 N2 S,S N2 D2 P M1 G2 R2 S
+338,Karnataka Devagandhari,S G2 M1 P N2 S,S N2 D2 P M1 G2 R2 S
+339,Karnaranjani,S R2 G2 M1 G2 P D2 S,S N2 D2 P M1 G2 R2 S
+340,Kowmodaki,S R2 G2 M1 P D2 N2 S,S D2 P G2 S
+341,Kowshika,S G2 M1 D2 N2 S,S N2 D2 M1 G2 M1 R2 S
+342,Lalitamanohari,S G2 M1 P D2 N2 S,S N2 P M1 G2 R2 S
+343,Madhavamanohari,S R2 G2 M1 P N2 D2 N2 S,S N2 D2 M1 G2 R2 S
+344,Malavashree,S G2 M1 P N2 D2 N2 P D2 N2 S,S N2 D2 P M1 G2 R2 S
+345,Mayapradeeptam,S M1 G2 M1 P D2 N2 S,S D2 P M1 G2 R2 S
+346,Madhyamaravali,S R2 G2 P D2 N2 S,S N2 D2 P G2 R2 S
+347,Madhyamavathi,S R2 M1 P N2 S,S N2 P M1 R2 S
+348,Mahanandhi,S R2 G2 P D2 S,S D2 P G2 R2 S
+349,Mandamari,S R2 M1 P D2 S,S N2 S D2 P M1 G2 R2 S
+350,Mangalavathi,S R2 M1 P D2 S,S D2 P M1 G2 R2 S
+351,Manirangu,S R2 M1 P N2 S,S N2 P M1 G2 R2 S
+352,Manjari,S G2 R2 G2 M1 P N2 D2 N2 S,S N2 D2 P M1 G2 R2 S
+353,Manohari,S G2 R2 G2 M1 P D2 S,S D2 P M1 G2 R2 S
+354,Manorama,S R2 G2 M1 P D1 P S,S N2 D1 P M1 G2 R2 S
+355,Maruvadhanyasi,S G2 M1 P D2 S,S N2 D2 P M1 D2 M1 G2 R2 S
+356,Mishramanolayam,S R2 M1 P D1 S,S D2 D1 P M1 R2 S
+357,Mishrashivaranjani,S R2 G2 P D2 S,S D2 P G3 G2 R2 S
+358,Miyan Malhar,S R2 P M1 P N2 D2 N3 S,S N2 P M1 P G2 M1 R2 S
+359,Mukhari,S R2 M1 P N2 D2 S,S N2 D1 P M1 G2 R2 S
+360,Nadachintamani,S R2 G2 M1 N2 D2 N2 S,S N2 D2 P M1 G2 R2 S
+361,Nadatarangini,S P M1 R2 G2 S,S P N2 D2 P M1 G2 R2 G2 S
+362,Nadavarangini,S P M1 N2 D2 N2 S,S P N2 D2 P M1 G2 R2 G2 S
+363,Nagari,S R2 M1 P D2 N2 S,S N2 D2 P M1 G2 S
+364,Nagavalli,S R2 M1 D2 N2 S,S N2 D2 M1 R2 S
+365,Nayaki,S R2 M1 P D2 N2 D2 P S,S N2 D2 P M1 R2 G2 R2 S
+366,Nigamagamini,M1 G2 S G2 M1 N2 S,S N2 M1 G2 M1 G2 S
+367,Nirmalangi,S R2 M1 P N2 S,S N2 P M1 R2 S
+368,Omkari,S R2 G2 M1 P D2 S,S D2 P M1 G2 R2 S
+369,Panchamam,S R2 D2 P N2 S,S N2 D2 P M1 G2 R2 S
+370,Patadeep,N2 S G2 M1 P N2 S,S N2 D2 P M1 G2 R2 S N2 S G2 R2 S
+371,Phalamanjari,S G2 M1 D2 S,S N2 D2 P M1 G2 M1 R2 S
+372,Phalaranjani,S G2 M1 P M1 D2 S,S N2 D2 P M1 G2 M1 R2 S
+373,Peeloo,N2 S G3 M1 P N2 D2 P S,S N2 D2 P D2 P M1 G2 R2 S N2 S
+374,Poornakalanidhi,S G2 M1 P D2 N2 S,S D2 P M1 G2 R2 S
+375,Pushpalathika,S R2 G2 M1 P N2 S,S N2 P M1 G2 R2 S
+376,Ratipatipriya,S R2 G2 P N2 S,S N2 P G2 R2 S
+377,Reethigowla,S G2 R2 G2 M1 N2 D2 M1 N2 N2 S,S N2 D2 M1 G2 M1 P M1 G2 R2 S
+378,Rudrapriya,S R2 G2 M1 P D2 N2 S,S N2 P M1 G2 R2 S
+379,Salagabhairavi,S R2 M1 P D2 S,S N2 D2 P M1 G2 R2 S
+380,Sarang,S R2 M1 P N2 S,S N2 P M1 R2 S
+381,Saindhavi,N2 D2 N2 S R2 G2 M1 P D2 N2,D2 P M1 G2 R2 S N2 D2 N2 S
+382,Sangrama,S R2 M1 D2 N2 P S,S N2 D2 G2 R2 S
+383,Sankrandanapriya,S R2 G2 P D2 S,S D2 P G2 R2 S
+384,Sarvachoodamani,S R2 M1 G2 M1 P D2 N2 S,S N2 P D2 N2 D2 P M1 G2 R2 G2 R2 S
+385,Shivapriya,S R2 G2 P D2 S,S D2 P G2 R2 S
+386,Shivaranjani,S R2 G2 P D2 S,S D2 P G2 R2 S
+387,Shree Manohari,S G2 R2 G2 M1 P D2 S,S D2 P M1 G2 R2 S
+388,Shree Manoranjani,S G2 M1 D2 N2 S,S N2 D2 M1 G2 R2 S
+389,Shreeranjani,S R2 G2 M1 D2 N2 S,S N2 D2 M1 G2 R2 S
+390,Siddhasena,S G2 R2 G2 M1 P D2 S,S N2 D2 M1 P M1 R2 G2 R2 S
+391,Suddha Bangala,S R2 M1 P D2 S,S D2 P M1 R2 G2 R2 S
+392,Suddha Bhairavi,S G2 M1 P N2 D2 S,S N2 D2 M1 G2 R2 S
+393,Suddha Dhanyasi,S G2 M1 P N2 S,S N2 P M1 G2 S
+394,Suddha Hindolam (Varamu),S G2 M1 D2 N2 S,S N2 D2 M1 G2 S
+395,Suddha Manohari,S R2 G2 M1 P D2 S,S N2 P M1 R2 G2 S
+396,Suddha Velavali,S R2 M1 P N2 S,S N2 D2 N2 P M1 G2 R2 S
+397,Sugunabhooshani,S G2 M1 P M1 D2 N2 S,S N2 D2 P M1 D2 M1 R2 S
+398,Swarabhooshani,S G2 M1 P D2 N2 S,S N2 D2 P M1 R2 S
+399,Swarakalanidhi,S M1 G2 M1 P D2 N2 S,S N2 D2 N2 P M1 G2 R2 S
+400,Swararanjani,S R2 G2 M1 D2 N2 S,S N2 P M1 G2 M1 R2 S
+401,Tavamukhari,S R2 G2 P D2 S,S N2 D2 P M1 G2 R2 S
+402,Vajrakanti,S G2 M1 P N2 S,S N2 D1 P M1 G2 R2 S
+403,23 Gowri Manohari,S R2 G2 M1 P D2 N3 S,S N3 D2 P M1 G2 R2 S
+404,Gowrivelavali,S R2 G2 S R2 M1 P D2 S,S N3 D2 P M1 G2 R2 S
+404,Gowrivelavali,S R2 G1 G2 S R2 M1 M1 P D2 D2 S,S N3 D2 P M1 G1 G2 R2 S
+405,Gowrishankar,S R2 G2 M1 P N3 S,S N3 D2 P M1 G2 R2 S
+406,Hamsadeepika,S R2 G2 M1 D2 S,S N3 D2 P M1 G2 R2 S
+407,Hrudkamali,S R2 M1 D2 N3 S,S N3 D2 M1 R2 S
+408,Lavanthika,S R2 M1 P N3 S,S N3 P M1 R2 S
+409,Sundaramanohari,S R2 M1 P N3 S,S N3 D2 P M1 G2 R2 S
+410,Vasantashree (Amba Manohari),S R2 G2 M1 D2 N3 S,S N3 D2 M1 G2 R2 S
+411,Velavali,S G2 M1 D2 N3 S,S N3 D2 P M1 G2 R2 S
+411,Velavali,S R2 M1 P D2 S,S N3 D2 P M1 G2 R2 S
+411,Velavali,S R2 G2 M1 P D2 S,S N3 D2 P M1 G2 S
+411,Velavali,S G2 R2 M1 P D2 S,S N3 D2 P M1 G2 R2 S
+411,Velavali,S R2 G2 S R2 M1 P D2 S,S N3 D2 P M1 G2 R2 S
+411,Velavali,S R2 M1 P D2 N3 S,S N3 D2 P M1 G2 R2 S
+412,24 Varunapriyaa,S R2 G2 M1 P D3 N3 S,S N3 D3 P M1 G2 R2 S
+413,Veeravasantham,S R2 G2 M1 P S,S N3 D3 P M1 G2 R2 S
+414,25 Mararanjani,S R2 G3 M1 P D1 N1 S,S N1 D1 P M1 G3 R2 S
+415,Sharavathi,S R2 G3 M1 P D1 N1 D1 S,S N1 D1 P M1 G3 R2 S
+416,Devasalaga,S G3 P D1 N1 S,S N1 D1 P M1 G3 R2 S
+417,Kesari,S R2 G3 M1 P M1 D1 P D1 S,S D1 N1 D1 P M1 G2 R2 S
+418,Rajathilaka,S R2 G3 M1 P S,S P M1 G3 R2 S
+419,26 Charukeshi,S R2 G3 M1 P D1 N2 S,S N2 D1 P M1 G3 R2 S
+420,Tarangini,S R2 G3 P D1 N2 D1 S,S D1 P M1 G3 R2 S
+420,Tarangini,S R2 G3 P D1 N2 D1 P D1 S,S D1 P G3 R2 S G3 M1 R2 G3 S
+421,Chirswaroopi,S R2 G3 M1 P D1 N2 S,S N2 D1 P M1 G3 R2 S
+422,Maravi,S G3 M1 P N2 S,S N2 D1 P M1 G3 R2 S
+423,Poorvadhanyasi,S M1 G3 M1 N2 S,S N2 D1 P M1 G3 R2 S
+424,Shiva Manohari,S M1 G3 M1 P D1 N2 S,S N2 D1 P M1 G3 R2 S
+425,Shukrajyothi,S R2 G3 M1 P D1 N2 S,S N2 P D1 M1 G3 R2 S
+426,Ushabharanam,S G3 M1 D1 P M1 D1 N2 S,S N2 D1 P M1 G3 R2 G3 M1 R2 S
+427,27 Sarasangi,S R2 G3 M1 P D1 N3 S,S N3 D1 P M1 G3 R2 S
+428,Sowrasena,S R2 M1 P D1 S,S N3 D1 P M1 G3 R2 S
+429,Haripriya,S R1 G3 M1 P S,S N3 D1 P M1 G3 S
+430,Kamala Manohari,S G3 M1 P N3 S,S N3 D1 P M1 G3 S
+431,Madhulika,S R2 G3 M1 N3 S,S N3 M1 G3 R2 S
+432,Nalinakanthi,S G3 R2 M1 P N3 S,S N3 P M1 G3 R2 S
+433,Neelamani,S R2 M1 P D1 N3 S,S N3 D1 P M1 R2 S
+434,Salavi,S G3 R2 G3 M1 P D1 N3 D1 S,S N3 D1 P M1 G3 R2 S
+435,Sarasanana,S R2 G3 M1 D1 N3 S,S N3 D1 M1 G3 R2 S
+436,Saraseeruha,S R2 G3 M1 D1 N1 D1 S,S N1 D1 M1 G3 R2
+437,Simhavahini,S G2 M1 P D1 N3 S,S N3 D1 P M1 G3 R2 S
+438,Surasena,S R2 M1 P D1 S,S N3 D1 P M1 G3 S R2 S
+439,Sutradhari,(Also 20) S R2 M1 P D1 S,S D1 P M1 R2 S
+440,Vasanthi,S R2 G3 P D1 S,S D1 P G3 R2 S
+441,28 Harikambhoji,S R2 G3 M1 P D2 N2 S,S N2 D2 P M1 G3 R2 S
+442,Harikedaragowla,S R2 G3 M1 P D2 N2 S,S N2 D2 P M1 G3 R2 S
+443,Ambhojini,S R2 G3 M1 D2 S,S D2 M1 G3 R2 S
+444,Andhali,S R2 M1 P N2 S,S N2 P M1 R2 G3 M1 R2 S
+445,Aparoopam,S R2 G3 M1 P N2 D2 N2 S,S D2 M1 G3 R2 G3 S
+446,Balahamsa,S R2 M1 P D2 S,S N2 D2 P M1 R2 M1 G3 S
+447,Bahudari,S G3 M1 P D2 N2 S,S N2 P M1 G3 S
+448,Bhoopali,S R2 G3 P D2 S,S D2 P G3 R2 S
+449,Chayalagakhamas,S M1 G3 M1 P D2 N2 S,S N2 D2 P M1 G3 R2 S
+450,Chayatarangini,S R2 M1 G3 M1 P N2 S,S N2 D2 P M1 G3 R2 S
+451,Chandrahasitham,S R2 G3 M1 D2 N2 S,S N2 D2 M1 G3 R2 S
+452,Dasharatipriya,S M1 G3 M1 P D2 N2 D2 S,S N2 D2 P M1 G3 M1 R2 S
+453,Dayaranjani,S R2 M1 P D2 S,S N2 D2 M1 G3 S
+454,Desh,S R2 M1 P N3 S,S N2 D2 P M1 G3 R2 S
+455,Deshakshi,S R2 G3 P D2 S,S N2 D2 P M1 G3 R2 S
+456,Deshkar,S R2 G3 P D2 S,S D2 P G3 R2 S
+457,Dwaithachintamani,S G3 M1 D2 N2 S,S N2 D2 M1 P G3 R2 S
+457,Dwaithachintamani,S G3 M1 D2 N2 S,S N2 D2 M1 G3 R2 S
+458,Dwijavanthi,S R2 M1 G3 M1 P D2 S,S N2 D2 P M1 G3 M1 R2 G2 R2 S N2 D2 N2 S
+459,Eeshamanohari,S R2 G3 M1 P D2 N2 S,S N2 D2 P M1 R2 M1 G3 R2 S
+460,Eeshaivaridhi,S R2 M1 D2 N2 S,S N2 P M1 R2 S
+461,Gandharalola,S R2 M1 P D2 S,S N2 D2 P M1 G3 M1 G3 R2 S
+462,Gavathi,S M1 P N2 S,S D2 M1 P G3 M1 R2 N2 S
+463,Guhamanohari,S R2 M1 D2 N2 S,S N2 D2 M1 R2 S
+464,Guharanjani,S R2 S M1 P D2 N2 S,S N2 D2 N2 P M1 G3 S
+465,Hamsaroopini,S R2 G3 P D2 S,S N2 P M1 R2 S
+466,Haridasapriya,S P M1 G3 M1 P N2 S,S N2 D2 N2 P M1 G2 R2 S
+467,Harikedaram,S R2 G3 M1 P D2 N2 S N2 S,S N2 S D2 N2 D2 P M1 G3 R2 S
+468,Harini,S G3 M1 P D2 N2 D2 S,S N2 S N2 D2 P M1 G3 M1 G2 R2 S
+469,Harithapriya,S R2 M1 P D2 S,S N2 D2 P M1 G3 R2 G3 R2 S
+470,Hemasaranga,S R2 G3 M1 P D2 N2 D2 S,S P M1 G3 R2 S
+471,Jaijaivanthi,S R2 G3 R2 S D2 N2 P R2 G3 M1 P N2 S,N2 S N2 D2 P D2 M1 G3 R2 G3 R2 S
+472,Jaithshree,S R2 G3 P D2 S,S D2 P G3 R2 S
+473,Jana Sammodhini,S R2 G3 P D2 N2 S,S N2 D2 P G3 R2 S
+474,Jayarama,S R2 G3 M1 P D2 N2 S,S N2 D2 P M1 G3 S
+475,Jhinjothi,D2 S R2 G3 M1 P D2 N2,D2 P M1 G3 R2 S N2 D2 P D2 S
+476,Jog (Hindustani),S G3 M1 P N3 S,S N2 P M1 G3 M1 G3 S G2 S
+477,Jujahuli,S M1 G3 M1 P D2 N2 S,S N2 D2 P M1 G3 S
+478,Kambhoji,S R2 G3 M1 P D2 S,S N2 D2 P M1 G3 R2 S N3 P D2 S
+479,Kapi Narayani,S R2 M1 P D2 N2 S,S N2 D2 P M1 G3 R2 S
+480,Kamas,S M1 G3 M1 P D2 N2 S,S N2 D2 P M1 G3 R2 S
+481,Karnataka Behag,S R2 G3 M1 P D2 N2 S,S N2 D2 N2 P D2 M1 G3 R2 S
+482,Karnataka Devagandhari,S G3 M1 P N2 S,S N2 D2 P M1 G3 R2 S
+483,Karnataka Khamas,S G3 M1 P D2 N2 S,S N2 D2 P M1 G3 S
+484,Kedaragowla,S R2 M1 P N2 S,S N2 D2 P M1 G3 R2 S
+485,Keshavapriya,S R2 S M1 P D2 N2 S,S N2 S P M1 G3 R2 S
+486,Kokiladhwani,S R2 G3 M1 D2 N2 D2 S,S N2 D2 N2 P M1 G3 R2 S
+487,Kokilavarali,S R2 M1 P D2 S,S N2 D2 M1 P M1 G3 R2 G3 S
+488,Kunthalavarali,S M1 P D2 N2 D2 S,S N2 D2 P M1 S
+489,Malavi,S R2 G3 M1 P N2 M1 D2 N2 S,S N2 D2 N2 P M1 G3 M1 R2 S
+490,Madhurakokila,S R2 G3 D2 N2 S,S N2 D2 G3 R2 S
+491,Mahathi,S G3 P N2 S,S N2 P G3 S
+492,Mahuri,S R2 M1 G3 R2 G3 P D2 S,S N2 D2 P M1 G3 R2 S R2 G3 R2 S
+493,Manjupriya,S G3 M1 P N2 S,S N2 D2 P G3 R2 S
+494,Manoharam,S R2 G3 M1 D2 N2 S,S N2 P M1 R2 S
+495,Mattakokila,S R2 P D2 N2 D2 S,S D2 N2 D2 P R2 S
+496,Meghana,S M1 G3 M1 P D2 S,S N2 D2 M1 G3 S
+497,Mohanam,S R2 G3 P D2 S,S D2 P G3 R2 S
+498,Nadavalli,S R2 M1 D2 N2 S,S N2 D2 M1 R2 S
+499,Nagaswaravali,S G3 M1 P D2 S,S D2 P M1 G3 S
+500,Narayanagowla,S R2 M1 P N2 D2 N2 S,S N2 D2 P M1 G3 R2 G3 S
+501,Narayani,S R2 M1 P D2 S,S N2 D2 P M1 R2 S
+502,Nattai Kurinji,S R2 G3 M1 N2 D2 N2 P D2 N2 S,S N2 D2 M1 G3 M1 P G3 R2 S
+502,Nattai Kurinji,S R2 G3 M1 D2 N2 S,S N2 D2 M1 G3 S
+502,Nattai Kurinji,S R2 G3 M1 N2 D2 N2 P D2 N2 S,S N2 D2 M1 G3 M1 P M1 G3 R2 S
+503,Nattai Narayani,S R2 G3 M1 D2 N2 D2 S,S N2 D2 P M1 G3 M1 R2 S
+504,Nandhkowns,S G3 M1 P M1 D2 N2 S,S N2 D2 P M1 G3 S G3 S
+505,Narani,S R2 M1 P D2 S,S N2 D2 P M1 R2 S
+506,Navarasa Kalanidhi,S R2 M1 P S N2 S,S N2 D2 P M1 G3 R2 S
+507,Navarasa kannada,S G3 M1 P S,S N2 D2 M1 G3 R2 S
+508,Neela,S G3 M1 D2 N2 S,S N2 D2 M1 G3 S
+509,Parsi,S R2 G3 M1 D2 N2 S,S N2 D2 P M1 G3 R2 S
+510,Parameshwarapriya,S R2 G3 M1 P N2 S,S N2 P M1 R2 S
+511,Pashupathipriya,S R2 M1 P M1 D2 S,S D2 M1 P R2 M1 S
+512,Poornakambhoji,S R2 G3 M1 P N2 S,S D2 P M1 G3 R2 S
+513,Pratapa Nattai,S R2 G3 M1 D2 P D2 N3 S,S N3 D2 P M1 G3 S
+514,Pratapavarali,S R2 M1 P D2 P S,S D2 P M1 G3 R2 S
+515,Pravalajyoti,S R2 M1 P D2 N2 S,S N2 D2 P M1 G3 S
+516,Ragapanjaramu,S R2 M1 P D2 N2 D2 S,S N2 D2 M1 R2 S
+517,Ragavinodini,S R2 G3 M1 D2 S,S D2 M1 G3 R2 S
+518,Rageshree,S G3 M1 D2 N3 S,S N2 D2 M1 G3 R2 S
+518,Rageshree,S G3 M1 D2 N3 S,S N3 D2 M1 G3 R2 S
+518,Rageshree,S G3 M1 D2 N3 S,S N3 D2 N3 D2 M1 G3 R2 S
+519,Ravi Chandrika,S R2 G3 M1 D2 S,S N2 D2 M1 G3 R2 S
+520,Savithri,S G3 M1 P N2 S,S N2 P M1 G3 S
+521,Sahana,S R2 G3 M1 P M1 D2 N2 S,S N2 S D2 N2 D2 P M1 G3 M1 R2 G3 R2 S
+522,Saraswathi Manohari,S R2 G3 M1 D2 S,S D2 N2 P M1 G3 R2 S
+523,Sathvamanjari,S R2 M1 P D2 S,S N2 D2 P M1 N2 D2 M1 R2 S
+524,Shakunthala,S R2 G3 M1 D2 N2 S,S N2 D2 M1 G3 S
+525,Shankaraharigowla,S R2 G3 M1 P D2 N3 S,S N2 D2 P M1 G3 R2 S
+526,Shenchukambhoji,S P M1 D2 N2 S,S N2 D2 P M1 G3 R2 S
+527,Chenjurutti,D2 S R2 G3 M1 P D2 N2,N2 D2 P M1 G3 R2 S N2 D2 P D2 S
+528,Shiva Kambhoji,S R2 G3 M1 N2 S,S N2 P M1 G3 R2 S
+529,Surutti,S R2 M1 P N2 D2 N2 S,S N2 D2 P M1 G3 P M1 R2 S
+530,Shyama,S R2 M1 P D2 S,S D2 P M1 G3 R2 S
+530,Shyama,S R2 G3 S R2 P M1 D2 D2 S,S D2 P M1 G3 R2 S
+531,Simhavikrama,S R2 G3 R2 M1 P D2 P N2 S,S N2 D2 P M1 G3 R2 S
+532,Sindhu Kannada,S M1 G3 M1 R2 G3 M1 P D2 P S,S N2 D2 P M1 G3 R2 S
+533,Sindhu Surutti,S R2 M1 P N2 S S N2 S,S N2 D2 P M1 R2 M1 G3 R2 S
+534,Suddha Khamas,S M1 G3 M1 P D2 N2 S,S N2 D2 P M1 G3 R2 S
+535,Suddha Varali,S R2 G3 M1 D2 N2 S,S N2 D2 N2 P M1 G3 S
+536,Suddha,S R2 M1 P D2 S,S N2 D2 P M1 R2 S
+537,Suddhatarangini,S R2 M1 P D2 S,S N2 D2 P M1 G3 R2 S
+538,Sumanapriya,S R2 G3 M1 P D2 P S,S D2 S P M1 G3 R2 S
+539,Suposhini,S R2 S M1 P N2 D2 S,S D2 P M1 R2 M1 S
+540,Suvarnakriya,S R2 G3 P N2 D2 S,S N2 P G3 R2 S
+541,Swaravali,S M1 G3 M1 P N2 D2 N2 S,S N2 D2 P M1 G3 R2 S
+542,Swaravedi,S M1 G3 M1 P N2 D2 N2 S,S N2 D2 P M1 G3 S
+543,Tilakavathi,S R2 G3 M1 P D2 P S,S D2 P M1 R2 S
+544,Thilang,S G3 M1 P N3 S,S N2 P M1 G3 S
+545,Umabharanam,S R2 G3 M1 P D2 N2 S,S N2 P M1 R2 G3 M1 R2 S
+546,Vaishnavi,S R2 G3 M1 P D2 S,S D2 P M1 G3 R2 S
+547,Veenavadini,S R2 G3 P N2 S,S N2 P G3 R2 S
+548,Vivardhani,S R2 M1 P S,S N2 D2 P M1 G3 R2 S
+549,Yadukula Kambhoji,S R2 M1 P D2 S,S N2 D2 P M1 G3 R2 S
+550,29 Dheera Shankarabharanam,S R2 G3 M1 P D2 N3 S,S N3 D2 P M1 G3 R2 S
+551,Anandharoopa,S R2 G3 P D2 N3 S,S N3 D2 P G3 R2 S
+552,Arabhi,S R2 M1 P D2 S,S N3 D2 P M1 G3 R2 S
+553,Atana,S R2 M1 P N2 S,S N2 D2 P M1 G2 M1 R2 S
+554,Bangala,S R2 G3 M1 P M1 R2 P S,S N3 P M1 R2 G3 M1 R2 S
+555,Begada,S G3 R2 G3 M1 P D2 P S,S N2 D2 P M1 G3 R2 S
+556,Behag,S G3 M1 P N3 D2 N3 S,S N3 D2 P M1 G3 R2 S
+557,Behag Deshikam,S R2 G3 M1 M2 P D2 N3 S,S N3 D2 P M2 M1 G3 R2 S
+558,Bilahari,S R2 G3 P D2 S,S N3 D2 P M1 G3 R2 S
+559,Buddhamanohari,S R2 G3 M1 S P S,S P M1 G3 R2 S
+560,Buddharanjani,S R2 G3 M1 P S,S N3 P M1 G3 M1 R2 S
+561,Chaya,S P M1 P D2 P N3 R2 S,S D2 P M1 P D2 P G3 M1 R2 S
+562,Chayashankarabharanam,S R1 M1 P D2 N3 S,S N3 D2 P M1 G3 R1 S
+563,Devagandhari,S R2 M1 P D2 S,S N3 D2 P M1 G3 R2 S
+564,Dharmalakhi,S M1 P D2 N3 S,S N3 D2 P M1 S
+565,Dhurvanki,S R2 M1 P D2 S,S N3 D2 P M1 G3 R2 S
+566,Gajagowri,S R2 M1 G3 M1 N3 P D2 S,S N3 D2 P M1 P M1 G3 R2 S
+567,Garudadhvani,S R2 G3 M1 P D2 N3 S,S D2 P G3 R2 S
+568,Gowdamalhar,S R2 M1 P D2 S,S N3 M1 G3 R2 S
+569,Hamsadhwani,S R2 G3 P N3 S,S N3 P G3 R2 S
+570,Hamsavinodhini,S R2 G3 M1 D2 N3 S,S N3 D2 M1 G3 R2 S
+571,Hemant,N3 S D2 N3 S G3 G3 M1 D2 N3 S,S N3 D2 P M1 G3 R2 S
+572,Hindustani Behag,S G3 M1 P N3 S,S N3 D2 P M1 G3 R2 S
+573,Jana Ranjani,S R2 G3 M1 P D2 P N3 S,S D2 P M1 R2 S
+574,Julavu,P D2 N3 S R2 G3 M1 P,M1 G3 R2 S N3 D2 P M1
+575,Kamaripriya,S G3 M1 D2 N3 S,S N3 D2 M1 M1 G3 M1 R2 S
+576,Kannada,S R2 G3 M1 P M1 D2 N3 S,S N3 S D2 P M1 G3 M1 G3 M1 R2 S
+577,Kadanakuthoohalam,S R2 M1 D2 N3 G3 P S,S N3 D2 P M1 G3 R2 S
+578,Kedaram,S M1 G3 M1 P N3 S,S N3 P M1 G3 R2 S
+579,Kokilabhashani,S R2 G3 M1 P D2 N3 S,S N3 P M1 G3 M1 R2 S
+580,Kolahalam,S P M1 G3 M1 P D2 N3 S,S N3 D2 P M1 G3 R2 S
+581,Kurinji,S N3 S R2 G3 M1 P D2,D2 P M1 G3 R2 S N3 S
+582,Kusumavichithra,S G3 R2 G3 M1 P N3 P D2 N3 S,S D2 N3 D2 M1 G3 P M1 G3 R2 S
+583,Kutuhala,S R2 M1 N3 D2 P N3 S,S N3 D2 P M1 G3 R2 S
+584,Lahari,S R2 G3 P D2 S,S D2 P M1 G3 R2 S
+585,Mand,S G3 M1 D2 N3 S,S N3 D2 P M1 G3 R2 S
+586,Mayadravila,S R2 G3 M1 P D2 N3 S,S N2 P M1 P G3 M1 R2 S
+587,Mohanadhwani,S R2 G3 P D2 S,S N3 P D2 P G3 R2 S
+588,Nagabhooshani,S R2 M1 P D2 N3 S,S D2 P M1 R2 S
+589,Nagadhwani,S R2 S M1 G3 M1 P N3 D2 N3 S,S N3 D2 N3 P M1 G3 S
+590,Narayanadeshakshi,S R2 M1 G3 R2 G3 M1 P D2 N3 S,S N3 D2 P M1 G3 R2 S
+591,Navaroj,P D2 N3 S R2 G3 M1 P,M1 G1 R3 S N2 D2 P
+592,Neelambari,S R2 G3 M1 P D2 P N3 S,S N3 P M1 G3 R2 G3 S
+593,Niroshta,S R2 G3 D2 N3 S,S N3 D2 G3 R2 S
+594,Pahadi,S R2 G3 P D2 P D2 S,N3 D2 P G3 M1 G3 R2 S N3 D2 P D2 S
+595,Poornachandrika,S R2 G3 M1 P D2 P S,S N3 P M1 R2 G3 M1 R2 S
+596,Poornagowla,S R2 G3 M1 P N3 D2 N3 P D2 N3 S,S N3 D2 N3 P M1 G3 R2 S
+597,Poorvagowla,S G3 R2 G3 S R2 M1 P D2 N3 S,S N3 D2 P M1 G3 R2 S
+598,Rathnabhooshani,S R2 G3 M1 P S,S P M1 G3 R2 S
+599,Reetuvilasa,S G3 M1 P D2 N3 S,S N3 D2 P M1 G3 S
+600,Saranga Mallar,S R2 M1 P D2 N3 S,S N3 D2 P M1 R2 S N3 S
+601,Shankara,S G3 P S,S N3 D2 P G3 P R2 G3 S
+602,Shankaraharigowla,S R2 G3 M1 P D2 N3 S,S N2 D2 P M1 G3 R2 S
+603,Shankaramohana,S R2 G3 P N3 D2 S N3,S D2 P G3 R2 S
+604,Shankari,S G3 P N3 S,S N3 P G3 S
+605,Sindhu,S M1 P D2 S,S N3 D2 M1 P M1 G3 R2 S
+606,Sindhu Mandari,S R2 G3 M1 P S,S N3 D2 P G3 M1 P M1 R2 S
+607,Suddha Malavi,S R2 G3 M1 P N3 S,S D2 N3 P M1 G3 R2 S
+608,Suddha Sarang,S R2 G3 M1 P D2 N3 D2 S,S D2 P M1 R2 G3 R2 S
+609,Suddha Saveri,S R2 M1 P D2 S,S D2 P M1 R2 S
+610,Suddha Vasantha,S R2 G3 M1 P N3 S,S N3 D2 N3 P M1 G3 S
+611,Suranandini,S R2 G3 P D2 N3 S,S N3 D2 P G3 R2 S
+612,Suraranjani,S G3 P R2 M1 D2 S,S N3 D2 P M1 G3 R2 S
+613,Tandavam,S G3 P D2 N3 S,S N3 D2 P G3 S
+614,Vallabhi,S R2 G3 M1 P D2 N3 S,S N3 D2 N3 D2 P M1 P G3 M1 R2 S
+615,Vasanthamalai,S R2 M1 P N3 S,S D2 P M1 R2 S
+616,Vedhandhagamana,S G3 M1 P N3 S,S N3 P M1 G3 S
+617,Veerapratapa,S G3 M1 P D2 S,S N3 D2 P M1 G3 R2 S
+618,Vilasini,S R2 G3 M1 P N3 S,S N3 P M1 G3 R2 S
+619,30 Naganandhini,S R2 G3 M1 P D3 N3 S,S N3 D3 P M1 G3 R2 S
+620,Nagabharanam,S R2 G2 M1 P D3 N3 S,S N3 D3 P M1 G2 R2 S
+621,Gambheeravani,S G3 P M1 D3 N3 S,S N3 P M1 G3 R2 G3 R2 S
+622,Lalithagandharva,S R2 G3 M1 P D3 N3 S,S N3 P G3 R2 S
+623,Samanta,S R2 G3 M1 P D3 N3 S,S N3 D3 N3 D3 P M1 G3 R2 S
+624,Thilang,S G3 M1 P N3 S,S N2 P M1 G3 S
+625,31 Yagapriya,S R3 G3 M1 P D1 N1 S,S N1 D1 P M1 G3 R3 S
+626,Kalavathi,S R3 G3 M1 P D1 N1 S,S N1 D1 P M1 G3 R3 S
+627,Damarugapriya,S R3 G3 P D1 N1 S,S N1 D1 P G3 R3 S
+628,Desharanjani,S R3 M1 P D1 N1 S,S N1 D1 P M1 R3 S
+629,Deshyathodi,S G2 M1 P D1 N2 S,S N2 D1 P M1 G2 R1 S
+630,Kalahamsa,S R3 G3 M1 P D1 S,S N1 D1 P M1 G3 R3 S
+631,Niranjani,S R3 M1 D1 N1 S,S N1 D1 M1 R3 S
+632,Prathapahamsi,S G3 M1 P N1 D1 N1 S,S N1 D1 P M1 G3 M1 R3 S
+633,32 Ragavardhani,S R3 G3 M1 P D1 N2 S,S N2 D1 P M1 G3 R3 S
+634,Ragachoodamani,S R3 G3 M1 P N2 S,S N2 D1 M1 R3 G3 S
+635,Amudagandhari,S G3 M1 P D1 N2 S,S N2 D1 P M1 G3 R3 S
+636,Dhowmya,S R3 G3 M1 P D1 N2 P S,S N2 D1 P M1 G3 R3 S
+637,Hindoladarbar,S G3 M1 P S,S N2 D1 P M1 R3 S
+638,Ramya,S R3 G3 M1 P D1 N2 P S,S N2 D1 P M1 G3 R3 S
+639,Samantajingala,S R3 G3 M1 P D1 N2 S,S N2 P D1 N2 P M1 G3 M1 R3 G3 S
+640,33 Gangeyabhushani,S R3 G3 M1 P D1 N3 S,S N3 D1 P M1 G3 R3 S
+641,Gangatarangini,S R3 G3 M1 P D1 N3 S,S N3 D1 P M1 M1 G3 M1 R3 S
+642,34 Vagadeeshwari,S R3 G3 M1 P D2 N2 S,S N2 D2 P M1 G3 R3 S
+643,Bhogachaya Nattai,S R3 G3 R3 G3 M1 P N2 N2 S,S N2 D2 N2 P S N2 P M1 M1 R3 S
+644,Bhanumanjari,S R3 G3 M1 P N2 S,S N2 P M1 R3 G3 R3 S
+645,Chayanattai,S R3 G3 M1 P M1 P S,S N2 D2 N2 P M1 R3 S
+646,Maghathi,S R3 M1 P D2 N2 S,S N2 D2 P M1 R3 S
+647,Dravida Kalavati,S R3 G3 P D2 S,S N2 D2 P G3 R3 S
+648,Mohanangi,S R3 G3 P D2 S,S D2 P G3 P D2 P G3 R3 S
+649,Murali,S R3 G3 M1 D2 N2 S,S N2 D2 M1 G3 R3 S
+650,Sharadabharana,S M1 G3 M1 P M1 D2 N2 S,S N2 D2 M1 P M1 R3 S
+651,Vikhavathi,S R3 G3 P D2 S,S D2 P G3 R3 S
+652,35 Shulini,S R3 G3 M1 P D2 N3 S,S N3 D2 P M1 G3 R3 S
+653,Shailadeshakshhi,S M1 G3 P D2 S,S N3 D2 S N3 P M1 G3 S
+654,Dheerahindolam,S G3 M1 D2 N3 S,S N3 D2 P M1 G3 R3 S
+655,Ganavaridhi,S M1 R3 G3 M1 P D2 N2 S,S D2 N2 P M1 R3 S
+655,Ganavaridhi,S M1 R3 G3 M1 P D2 N3 S,S D2 N3 P M1 R3 S
+656,Shokavarali,S G3 D2 N3,D2 P M1 G3 R3 S
+657,36 Chalanattai,S R3 G3 M1 P D3 N3 S,S N3 D3 P M1 G3 R3 S
+658,Devanattai,S G3 M1 P S,S N3 D3 P M1 G3 R3 S
+659,Gambheeranattai,S G3 M1 P N3 S,S N3 P M1 G3 S
+660,Ganaranjani,S R3 G3 M1 P M1 D3 N3 S,S N3 D3 P M1 P M1 R3 S
+661,Nattai,S R3 G3 M1 P N3 S,S N3 P M1 G3 R3 S
+662,37 Salagam,S R1 G1 M2 P D1 N1 S,S N1 D1 P M2 G1 R1 S
+663,Sowgandhini,S R1 M2 P D1 S,S N1 D1 P M2 G1 R1 S
+664,Bhogasaveri,S R1 M2 D1 N1,D1 P M2 G1 R1 S
+665,38 Jalarnavam,S R1 G1 M2 P D1 N2 S,S N2 D1 P M2 G1 R1 S
+666,Jaganmohinam,S R1 G1 M2 P D1 N2 S,S N2 D1 P M2 G1 R1 S
+667,Jaganmohana,S R1 G1 M2 P D2 S,S N2 D1 P M2 G1 R1 S
+668,39 Jhalavarali,S R1 G1 M2 P D1 N3 S,S N3 D1 P M2 G1 R1 S
+669,Dhalivarali,S R1 G1 M2 P D1 N3 S,S N3 D1 P M2 G1 R1 S
+670,Bhoopalapanchamam,S G1 R1 G1 P M2 D1 S,S P D1 M2 G1 R1 S
+671,Godari,S R1 G1 R1 M2 G1 M2 P D1 N3 S,S N3 D1 P M2 R1 S
+672,Jalasugandhi,S R1 G1 M2 P D1 S,S D1 P M2 G1 R1 S
+673,Janavali,S G2 R1 G2 M2 P D1 N3 D1 S,S N3 D1 P M2 G2 R1 S
+674,Karunamritavarshini,S R1 G1 M2 P D1 N3 P S,S N3 D1 M2 G1 R1 S
+675,Kokilapanchamam,S G1 R1 G1 P D1 N3 S,S N3 D1 P M2 G1 R1 S
+676,Varali,S G1 R1 G1 M2 P D1 N3 S,S N3 D1 P M2 G1 R1 S
+677,40 Navaneetham,S R1 G1 M2 P D2 N2 S,S N2 D2 P M2 G1 R1 S
+678,Nabhomani,S G1 R1 G1 M2 P S,S N2 D2 P M2 G1 R1 S
+679,41 Pavani,S R1 G1 M2 P D2 N3 S,S N3 D2 P M2 G1 R1 S
+680,Kumbhini,S G1 R1 G1 M2 P N3 D2 N3 S,S N3 D2 P M2 G1 R1 S
+681,Chandrajyothi,S R1 G1 M2 P D2 S,S D2 P M2 G1 R1 S
+682,Prabhavali,S R1 M2 P D2 N3 S,S N3 D2 M2 P M2 R1 G1 R1 S
+683,Poornalalitha,S R1 M2 G1 R1 M2 P N3 D2 N3 S,S N3 D2 P M2 G1 R1 S
+684,Poornapanchamam,"(See 15, 16) S R1 G1 M2 P D2",D2 P M2 G1 R1 S
+685,42 Raghupriyaa,S R1 G1 M2 P D3 N3 S,S N3 D3 P M2 G1 R1 S
+686,Ravi Kriya,S G1 R1 G1 M2 P D3 N3 S,S N3 P M2 G1 R1 S
+687,Gandharva,M2 P D3 N3 S R1 G1,R1 S N3 P M2 P
+688,Gomathi,S R1 G1 M2 P D3 N3,P M2 G1 R1 S
+689,Raghuleela,S M2 R1 P M2 G1 M2 P M2 R1 M2 P N3 S,S N3 D3 N3 P M2 G1 M2 R1 M2 G1 R1 S
+690,43 Ghavambhodi,S R1 G2 M2 P D1 N1 S,S N1 D1 P M2 G2 R1 S
+691,Geervani,S R1 G2 M2 P D1 N1 S,S N1 D1 P M2 G2 R1 S
+692,Kanchanabowli,S G2 M2 P D1 S,S N1 D1 P M1 G2 R1 S
+693,Mahathi,S G2 M2 P D1 N1 S,S N1 D1 P M2 G2 S
+694,Mechagandhari,S R3 G3 M1 P D2 N2 S,S N2 D2 N2 P M1 G3 M1 R3 S
+695,Suvarnadeepakam,S R1 G2 M2 P D1 S,S D1 P M2 G2 R1 S
+696,Vijayabhooshavali,S R1 G3 M2 P S,S N3 D3 P M2 G3 R1 S
+697,44 Bhavapriya,S R1 G2 M2 P D1 N2 S,S N2 D1 P M2 G2 R1 S
+698,Bhavani,S R1 G2 M2 D1 N2 S,S N2 D1 M2 G2 R1 S
+699,Bhavani,S R1 G2 M2 P D1 P N2 S,S N2 D1 P M2 G2 R1 S
+700,Kanchanavathi,S R1 G2 M2 P N2 S,S N2 P M2 G2 R1 S
+701,45 Shubhapanthuvarali,S R1 G2 M2 P D1 N3 S,S N3 D1 P M2 G2 R1 S
+702,Shivapanthuvarali,S R1 G2 M2 P D1 N3 S,S N3 D1 P M2 G2 R1 S
+703,Arunangi,S R1 M2 P N3 D1 S,S N3 D1 M2 R1 G2 R1 S
+704,Bandhuvarali,S M2 S N3 D1 P M2,D1 M2 G2 R1 S
+705,Bhanudhanyasi,S R1 G2 M2 N3 D1 N3,D1 P M2 G2 R1 S N3 S
+706,Bhanukeeravani,S R1 G2 M2 P D1 N3 S,S N3 D1 M2 G2 R1 S
+707,Chayaranjani,S G2 M2 P N2 S,S N2 D1 P M2 G2 S
+708,Dhowreyani,S R1 G2 M2 N3 S,S N3 D1 P M2 G2 R1 S
+709,Hindusthani Todi,N3 R1 G2 M2 D1 N3 S,S N3 D1 P M2 G2 R1 S
+710,Jalakesari,S R1 M2 P D1 N3 S,S D1 P M2 R1 S
+711,Kumudhachandrika,S G2 M2 D1 S,S N3 D1 M2 G2 R1 S
+712,Mahanandhini,S M2 G2 M2 P D1 N3 S,S D1 N3 D1 P M2 G2 R1 S
+713,Parpathi,S G2 M2 P N3 S,S N3 P M2 G2 S
+714,Shekharachandrika,S R1 G2 M2 D1 N3 S,S N3 D1 M2 G2 R1 S
+715,46 Shadvidhamargini,S R1 G2 M2 P D2 N2 S,S N2 D2 P M2 G2 R1 S
+716,Sthavarajam,S R1 M2 P D2 S,S N2 D2 M2 G2 S
+717,Ganahemavati,S G2 M2 P N2 S,S N2 D2 P M2 G2 S
+718,Indhudhanyasi,S G2 M2 D2 N2 S,S N2 D2 P D2 M2 G2 R1 S
+719,Shreekanti,S G2 M2 P D2 N2 S,S N2 D2 P M2 G2 S
+720,Teevravahini,S R1 G2 M2 P D2 P N2 S,S N2 D2 P M2 G2 R1 G2 M2 R1 S
+721,47 Suvarnangi,S R1 G2 M2 P D2 N3 S,S N3 D2 P M2 G2 R1 S
+722,Sowveeram,S R1 G2 M2 P D2 N3 S,S N3 D2 P M2 G2 R1 S
+723,Abhiru,S R1 G2 R1 M2 P N3 S,S D2 P M2 G2 R1 G2 S
+724,Rathika,S M2 G2 M2 P D2 N3 S,S N3 D2 P M2 G2 R1 S
+725,Vijayashree,S R1 G2 M2 P N2 S,S N2 P M2 G2 R1 S
+726,48 Divyamani,S R1 G2 M2 P D3 N3 S,S N3 D3 P M2 G2 R1 S
+727,Jeevanthika,S M2 P D3 N3 S,S N3 P M2 G2 S
+728,Deshamukhari,S R1 G2 M2 P D3 N3 D3 S,S D3 N3 D3 P M2 G2 R1 S
+729,Dundubi,S R1 G2 M2 P D3 N3 S,S N3 P M2 G2 R1 S
+730,Jeevanthini,S M2 P D3 N3 S,S N3 P M2 G2 S
+731,Suddha Gandhari,S R1 G2 M2 N3 S,S N3 D3 N3 S N3 P M2 R1 S
+732,49 Dhavalambari,S R1 G3 M2 P D1 N1 S,S N1 D1 P M2 G3 R1 S
+733,Dhavalangam,S R1 G3 M2 P D1 S,S N1 D1 P M2 G3 R1 S
+734,Abhiramam,S R1 M2 P D1 N1 S,S N1 D1 P M2 G2 R1 S
+735,Bhinnapauarali,S M2 P D1 N1 D1 S,S N1 D1 P M2 G3 S
+736,Dharmini,S R1 G3 M2 D1 N1 S,S N1 D1 M2 G3 R1 S
+737,Sudharmini,S R1 M2 P D1 N1 S,S N1 D1 M1 G3 R2 S
+738,50 Namanarayani,S R1 G3 M2 P D1 N2 S,S N2 D1 P M2 G3 R1 S
+739,Namadeshi,S R1 G3 M2 P D1 N2 S,S N2 D1 P M2 G3 R1 S
+740,Narmada,S R1 G3 M2 D1 N2 S,S N2 D1 M2 P M2 G3 R1 S
+741,Swaramanjari,S G3 M2 P D1 S,S N2 D1 P M2 G3 S
+742,51 Panthuvarali (Kamavardhani),S R1 G3 M2 P D1 N3 S,S N3 D1 P M2 G3 R1 S
+743,Kashiramakriya,S G3 R1 G3 M2 P D1 N3 S,S N3 D1 P M1 G3 R1 S
+744,Mandari,S R1 G3 M2 P N3 S,S N3 P M2 G3 R1 S
+745,adhi Panchama,S R1 P D1 N3 S,S N3 D1 N3 P M2 G3 R1 S
+746,Basant Bahar,S M2 P G3 M2 N3 D1 N3 S,R2 S N2 D2 P M1 G2 M1 G2 R2 S
+747,Bhogavasantha,S R1 G3 M2 D1 N3 S,S N3 D1 M2 G3 R1 S
+748,Deepakam,S R2 M2 P D1 P S,S N3 D1 N3 P M2 G3 R1 S
+749,Gamakapriya,S R1 G3 M2 P N3 D1 S,S D1 P M2 G3 R1 S
+750,Gamanapriya,S R1 G3 M2 P N3 D1 S,S D1 P M2 G3 R1 S
+751,Hamsanarayani,S R1 G3 M2 P S,S N3 P M2 G3 R1 S
+752,Indumathi,S G3 M2 D1 N3 S,S N3 D1 P M2 G3 S
+753,Kamalaptapriya,S R1 G3 M2 P D1 S,S D1 P M2 G3 R1 S
+754,Kumudhakriya,S R1 G3 M2 D1 S,S N3 D1 M2 G3 R1 S
+755,Maruthi,S R1 M2 P N3 S,S N3 D1 P M2 G3 R1 S
+756,Ponni,S G3 M2 P N3 S,S N3 P M2 G3 R1 S
+757,Prathapa,S G3 M2 D1 N3 S,S N3 D1 P M2 G3 R1 S
+758,Puriya Dhanashree,N3 R1 G3 M2 P D1 P N3 S,R1 N3 D1 P M2 G3 M2 R1 G3 R1 S
+759,Tandavapriya,S R1 G3 M2 P S,S P M2 G3 R1 S
+760,52 Ramapriya,S R1 G3 M2 P D2 N2 S,S N2 D2 P M2 G3 R1 S
+761,Ramamanohari,S R1 G3 M2 P D2 S,S N2 D2 P M2 G3 R1 S
+762,Chintaramani,S G3 M2 P D2 N2 S,S D2 P M2 G3 R1 S
+763,Hamsagamini,S G3 M2 P D2 N2 S,S N2 D2 P M2 D2 P M2 G3 R1 S
+764,Lokaranjani,S G3 M2 P M2 D2 N2 S,S N2 D2 N2 P M2 G3 R1 S
+765,Meghashyamala,S G3 M2 P D2 N2 D2 P S,S N2 D2 P M2 G3 R1 S
+766,Patalambari,S R1 G3 M2 D2 S,S D2 M2 G3 R1 S
+767,Raktimargini,S P M2 D2 N2 S,S N2 D2 P M2 P G3 R1 S
+768,Rasavinodini,S G3 M2 P D2 N2 S,S N2 D2 P M2 G3 S
+769,Reethi Chandrika,S R1 G3 M2 P D2 S,S N2 D2 P M2 G3 R1 S
+770,Seemantinipriya,S R1 G3 M2 D2 N2 S,S N2 D2 M2 G3 R1 S
+771,Sukhakari,S R1 S P D2 N2 S,S N2 D2 P M2 G3 S R1 S
+772,Vedhaswaroopi,S R1 G3 M2 P D2 N3 P S,S N3 D2 P N3 P M2 G3 S
+773,53 Gamanashrama,S R1 G3 M2 P D2 N3 S,S N3 D2 P M2 G3 R1 S
+774,Gamakakriya,S R1 G3 M2 P D2 S,S N3 D2 P M2 G3 R1 S
+775,Alankari,S G3 M2 D2 N3 D2 S,S N3 D2 M2 G3 S
+776,Bhatiyar,S D2 P D2 M2 P G3 M2 D2 S,R1 N3 D2 P M2 P G3 R1 S
+777,Dvigandharabhooshani,S R1 G2 G3 G2 P D2 S,S D2 P G2 G3 G2 R1 S D2 S
+778,Hamsanandi,S R1 G3 M2 D2 N3 S,S N3 D2 M2 G3 R1 S
+779,Mechakangi,S R1 G3 M2 P D2 P N3 S,S N3 P D2 P M2 G3 R1 S
+780,Padmakalyani,S G3 P N3 S,S N3 D2 P M2 G3 S
+781,Poorvi Kalyani,S R1 G3 M2 P D2 P S,S N3 D2 P M2 G3 R1 S
+782,Sharabadhvaja,S R1 G3 M2 P D2 S,S D2 P G3 R1 S
+783,Sohini,S G3 M2 D2 N3 S,S N3 D2 M2 G3 R1 S
+784,Vaishaka,S R1 G3 M2 P D2 N3 S,S N3 D2 N3 P M2 G3 M2 R1 S
+785,54 Vishvambhari,S R1 G3 M2 P D3 N3 S,S N3 D3 P M2 G3 R1 S
+786,Vamshavathi,S R1 G3 M2 P D3 N3 S,S N3 P M2 G3 R1 S
+787,Hemangi,S R1 G3 M2 D3 S,S D3 M2 G3 R1 S
+788,Pooshakalyani,S R1 G3 M2 P D3 N3 S,S N3 P M2 G3 R1 S
+789,Sharadhyuthi,S R1 G3 M2 P D3 N3 D3 S,S N3 D3 P M2 G3 R1 S
+790,Suddhakriya,S R1 M2 M2 P D3 S,S D3 P M2 G3 R1 S
+791,Sundarangi,S R1 G3 P D3 N3 S,S N3 D3 P G3 R1 S
+792,Vijayavasantham,S M2 P D3 N3 S,S N3 P M2 G3 S
+793,55 Shyamalangi,S R2 G2 M2 P D1 N1 S,S N1 D1 P M2 G2 R2 S
+794,Shyamalam,S R2 G2 M2 P D1 N1 S,S N1 D1 P M2 G2 R2 S
+795,Deshavali,S R2 G2 M2 D1 N1 D1 S,S N1 D1 M2 G2 R2 S
+796,Vijayamalavi,S R2 M2 P D1 S,S N1 D1 P M2 R2 S
+797,56 Shanmukhapriyaa,S R2 G2 M2 P D1 N2 S,S N2 D1 P M2 G2 R2 S
+798,Chamaram,S R2 M2 P D1 N2 S,S N2 D1 P M2 G2 R2 S
+799,Bhashini,S G2 R2 G2 M2 P D1 N2 S,S N2 D1 P M2 G2 R1 S
+800,Chintamani,S G2 R2 G2 M2 G2 R2 G2 P M2 P D2 N2 S,S N2 D2 P M2 G2 R2 S
+801,Dhanakari,S G2 P D1 N2 S,S N2 D1 M2 G2 S
+802,Garigadya,N2 S G2 M2 P D1 N2,D1 P M2 G2 R2 S
+803,Gopikathilakam,S R2 G2 M2 P N2 S,S N2 P M2 G2 R2 S
+804,Kokilanandhi,S G2 M2 D1 N2 S,S N2 D1 P M2 G2 S
+805,Rajeshwari,S R2 G2 P N2 S,S N2 D1 P M1 G2 S
+806,Samudrapriya,S G2 M2 P N2 S,S N2 P M2 G2 S
+807,Shanmukhi (Trimoorti),S R1 G2 M2 D1 N2 S,S N2 D1 M2 G2 R1 S
+808,Sumanasaranjani,S G2 M2 P N2 S,S N2 P M2 G2 S
+809,Vasukari,S G2 M2 P D1 N2 S,S N2 D1 M2 G2 S
+810,57 Simhendramadhyamam(Sumadhyuti),S R2 G2 M2 P D1 N3 S,S N3 D1 P M2 G2 R2 S
+811,Anandavalli,S G2 M2 P N3 S,S N3 P M2 G2 S
+812,Ghantana,S R2 G2 M2 D1 N3 S,S N3 D1 M2 G2 R2 S
+813,Jayachoodamani,S G2 M2 P D1 S,S N3 D1 P M2 G2 R2 S
+814,Pranavapriya,S R2 M2 P N3 S,S N3 P M2 G2 R2 S
+815,Sarvangi,S R2 M2 D1 N3 S,S N3 D1 M2 G2 S R3 S
+816,Seshanadam,S R2 G2 M2 P D1 S,S N3 D1 P M2 G2 R2 S
+817,Suddha,S R2 G2 M2 P N3 S,S N3 P M2 G2 R2 S
+818,Sunadapriya,S R2 G2 M2 P S,S N3 D1 P M2 G2 R2 S
+819,Urmika,S R2 G2 M2 P N3 S,S N3 P M2 G2 R2 S
+820,Vijayasaraswathi,S G2 M2 P D1 N3 S,S N3 P M2 G2 R2 S
+821,58 Hemavathi,S R2 G2 M2 P D2 N2 S,S N2 D2 P M2 G2 R2 S
+822,Deshisimharavam,S R2 G2 M2 P D2 N2 S,S N2 D2 P M2 G2 R2 S
+823,Chandrarekha,S R2 G2 M2 P D2 S,S N2 D2 M2 G2 R2 S
+824,Hamsabhramari,S R2 G2 M2 P D2 S,S N2 D2 P M2 G2 R2 S
+825,Hemambari,S R2 G2 M2 P D2 N2 S,S P M2 G2 R2 S
+826,Hemapriya,S R2 G2 M2 D2 S,S D2 M2 G2 R2 S
+827,Kshemakari,S R2 M2 D2 N2 S,S N2 D2 M2 R2 S
+828,Madhukowns,S G2 M2 P N2 P S,S N2 P M2 G3 S
+829,Shakthiroopini,S G2 M2 D2 S,S N2 D2 M2 G2 S
+830,Simharava,S R2 M2 P N2 S,S N2 P M2 R2 G2 R2 S
+831,Vijayasaranga,S R2 G2 M2 P D2 S,S N2 D2 M2 G2 R2 S
+832,Vijayashrangi,S R2 G2 M2 P D2 S,S N2 D2 M2 G2 R2 S
+833,Yagini,S R2 M2 P N2 S,S N2 P M2 R2 S
+834,59 Dharmavathi,S R2 G2 M2 P D2 N3 S,S N3 D2 P M2 G2 R2 S
+835,Dhamavathi,S R2 G2 M2 P D2 N3 S,S N3 D2 P M2 G2 R2 S
+836,Gowrikriya,S G2 M2 P D2 N3 S,S N3 D2 N3 P M2 G2 S
+837,Karmukhavati,S R2 G2 M2 D2 N3 S,S N3 D2 M2 G2 R2 S
+838,Karpoora Bharani,S R2 G2 P M2 P D2 S,S D2 P M2 P G2 R2 S
+839,Lalitasimharavam,S R2 G2 M2 P S,S N3 P M2 G2 R2 S
+840,Madhumalathi,N3 S G2 M2 P S,S N3 D2 P M2 G2 R2 S
+841,Madhuvanthi,S G2 M2 P N3 S,S N3 D2 P M2 G2 R2 S
+842,Moharanjani,S R2 G2 P D2 S,S N3 D2 M2 G2 S
+843,Ranjani,S R2 G2 M2 D2 S,S N3 D2 M2 G2 S
+844,Varada,S R2 M2 P N3 S,S N3 P M2 R2 S
+845,Vijayanagari,S R2 G2 M2 P D2 S,S D2 P M2 G2 R2 S
+846,Vishveshwarapriya,S R2 M2 P N3 S,S N3 D2 P M2 R2 S
+847,60 Neethimathi,S R2 G2 M2 P D3 N3 S,S N3 D3 P M2 G2 R2 S
+848,Nisshadham,S R2 G2 M2 P D3 N3 S,S N3 P M2 G2 R2 S
+849,Amarasenapriya,S R2 M2 P N2 S,S N3 P M2 G2 R2 S
+850,Deshyaganavaridhi,S R2 G2 M2 P D3 N3 P S,S N3 S P M2 G2 R2 S
+851,Hamsanadam,S R2 M2 P D3 N3 S,S N3 D3 P M2 R2 S
+851,Hamsanadam,S R2 M2 P N3 S,S N3 P M2 R2 S
+852,Kaikavashi,S R2 G2 M2 P D3 N3 S,S N3 P M2 G2 R2 S
+853,Nuthanachandrika,S R2 G2 M2 P D3 N3 S,S N3 P D3 N3 P M2 G2 S
+854,Rathnasaranga,S R2 G2 M2 P N3 S,S N3 D3 P M2 G2 R2 S
+855,61 Kanthamani,S R2 G3 M2 P D1 N1 S,S N1 D1 P M2 G3 R2 S
+856,Kunthalam,S R2 G3 M2 P D1 S,S N1 D1 P M2 G3 R2 S
+857,Kanakakusumavali,S R2 G3 M2 P D2 S,S D2 P M2 G3 R2 S
+858,Shruthiranjani,S R2 G3 M2 P D1 N1,N1 D1 P M2 G3 R2 S
+859,62 Rishabhapriya,S R2 G3 M2 P D1 N2 S,S N2 D1 P M2 G3 R2 S
+860,Rathipriya,S R2 G3 M2 P D1 N2 S,S N2 D1 P M2 G3 R2 S
+861,Gopriya,S R2 G3 M2 D1 N2 S,S N2 D1 M2 G3 R2 S
+862,Poornasaveri,S R2 M2 P D1 S,S N2 D1 P M2 G3 R2 S
+863,Rathnabhanu,S R2 M2 P N2 D1 N2 S,S N2 D1 P M2 G3 R2 S
+864,Suddha Saranga,S G3 M2 P N2 S,S D1 P M2 G3 S
+865,63 Lathangi,S R2 G3 M2 P D1 N3 S,S N3 D1 P M2 G3 R2 S
+866,Geethapriya,S R2 G3 M2 P D1 N3 S,S N3 D1 P M2 G3 R2 S
+867,Chitrachandrika,S G3 R2 G3 M2 P N3 D1 S,S N3 D1 M2 G3 R2 S
+868,Hamsalatha,S R2 G3 P N3 S,S N3 D1 P M2 G3 R2 S
+869,Kananapriya,S R2 G3 M2 P M2 D1 N3 S,S D1 N3 P M2 G3 R2 S
+870,Karunakari,S M2 P D1 N3 D1 S,S N3 D1 P M2 S
+871,Lalithangi,S R2 G3 M2 D1 N3 S,S N3 D1 M2 G3 R2 S
+872,Ramani,S G3 M2 P N3 S,S N3 D1 P M2 G3 S
+873,Rathnakanthi,S R2 G3 M2 P N3 S,S N3 P M2 G3 R2 S
+874,Raviswaroopini,S G3 M2 P D1 N3 S,S N3 D1 P M2 G3 S
+875,Sajjananandhi,S R2 G3 M2 P D1 N3 S,S N3 D1 M2 G3 R2 S
+876,Skandamanorama,S R2 M2 P N3 S,S N3 P M2 R2 S
+877,64 Vachaspathi,S R2 G3 M2 P D2 N2 S,S N2 D2 P M2 G3 R2 S
+878,Bhooshavathi,S R2 G3 M2 P D2 N2 S,S N2 D2 P M2 G3 R2 S
+879,Bhagavataranjana,S R2 M2 P D2 N2 S,S N2 D2 P M2 G3 R2 S
+880,Bhogeeshwari,S R2 G3 P D2 N2 D2 S,S N2 D2 P M2 G3 R2 S
+881,Bhooshavali,S R2 G3 M2 P D2 S,S N2 D2 P M2 G3 R2 S
+882,Dwigandharabhooshani,S R1 G2 G3 G2 P D2 S,S D2 P G2 G3 G2 R1 S D2 S
+883,Gaganamohini,S G3 P D2 N2 S,S N2 P M2 G3 S
+884,Gurupriya,S R2 G3 M2 D2 N2 S,S N2 D2 M2 G3 R2 S
+885,Hrdhini,S G3 M2 P N2 S,S N2 P M2 G3 S
+886,Mangalakari,S R2 P M2 P D2 N2 S,S N2 D2 P G3 R2 S
+887,Mukthidayini,S G3 M2 P D2 N2 S,S N2 D2 P M2 G3 S
+888,Nadhabrahma,S P M2 P D2 N2 S,S N2 D2 P M2 G3 S
+889,Pranavakari,P N2 D2 N2 S R2 G3 M2,P M2 G3 R2 S N2 D2 N2 P
+890,Saraswathi,S R2 M2 P D2 S,S N2 D2 P M2 R2 S
+891,Triveni,S R2 M2 P D2 N2 S,S N2 D2 P M2 R2 S
+892,Utthari,S G3 M2 P D2 N2 S,S N2 D2 M2 G3 S
+893,Vivahapriya,S R2 M2 P D2 N3 S,S N3 D2 P M2 R2 S
+894,65 Mechakalyani,S R2 G3 M2 P D2 N3 S,S N3 D2 P M2 G3 R2 S
+895,Shanthakalyani,S R2 G3 M2 P D2 N3 S,S N3 D2 P M2 G3 R2 S
+896,Amritha Behag,S M2 G3 P N3 S,D2 N3 D2 M2 G3 S
+897,Aprameya,S R2 M2 P D2 S,S N3 D2 M2 G3 M2 R2 S
+898,Bhoopkalyani,S R2 G3 P D2 S,S N3 D2 P M2 G3 R2 S
+899,Chandrakantha,S R2 G3 M2 P D2 N3 S,S N3 D2 N3 P M2 G3 R2 S
+900,"Hameer (Kalyan, Yaman That Janya)",S R2 S G3 M1 D2 N3 D2 S,S N3 D2 N2 P G3 M1 D2 M2 P D2 P G3 M1 R2 S
+901,Hameer Kalyani,S P M2 P D2 N3 S,S N3 D2 P M2 M1 G3 P M1 R2 S
+901,Hameer Kalyani,S R2 S P M2 P D2 N3 S,S N3 D2 P M2 G3 M1 G3 R2 S
+901,Hameer Kalyani,S R2 S P M2 N3 D2 S N3 S,S N3 D2 P M2 G M1 R2 S
+901,Hameer Kalyani,S R2 G3 M2 P D2 N3 P D2 P S,S N3 D2 P G3 M1 G3 R2 S
+901,Hameer Kalyani,S P M2 P D2 N3 S,S N3 D2 P G3 M1 G3 R2 S
+902,Hamsakalyani,S R2 G3 P N3 S,S N3 D2 P M2 G3 R2 S
+903,Kalyanadayini,S R2 G3 M2 D2 N3 S,S N3 D2 M2 G3 R2 S
+904,Kannadamaruva,S G3 M2 P D2 N3 S,S N3 D2 P M2 G3 S
+905,Kowmoda,S R2 G3 M2 N3 S,S N3 P M2 G3 S
+906,Kunthalashreekanti,S G3 M2 P D2 N3 S,S N3 P M2 G3 R2 S
+907,Mohana Kalyani,S R2 G3 P D2 S,S N3 D2 P M2 G3 R2 S
+908,Mrganandhana,S R2 G3 D2 N3 S,S N3 D2 M2 D2 G3 R2 S
+909,Nadhakalyani,S G3 M2 D2 N3 S,S N3 D2 M2 G3 M2 R2 S
+910,Pramodhini,S G3 M2 P D2 S,S D2 P M2 G3 S
+911,Saranga,S R2 G3 M2 P D2 N3 S,S N3 D2 P M2 R2 G3 M1 R2 S
+911,Saranga,S R2 S P M2 P D2 N3 S,S N3 S D2 P M2 R2 G3 M1 R2 S
+911,Saranga,S P M2 P D2 N3 S,S N3 D2 P M2 R2 G3 M1 R2 S
+912,Saranga Tarangini,S R2 M2 P D2 N3 S,S N3 D2 P M2 R2 S
+913,Shilangi,S G2 M2 P N3 S,S N3 P M2 G2 S
+914,Suddha Koshala,S G3 M2 P S,S N3 D2 M2 G3 R2 S
+915,Sunadavinodini,S G3 M2 D2 N3 S,S N3 D2 M2 G3 S
+916,Swayambhooshwara Raga,S G3 P S,S P G3 S
+917,Vandanadharini,S R2 M2 P D2 S,S D2 P M2 R2 S
+918,Yamuna Kalyani,S R2 G3 M2 P D2 N3 S,S N3 D2 P M2 G3 M1 G3 R2 S
+919,66 Chitrambari,S R2 G3 M2 P D3 N3 S,S N3 D3 P M2 G3 R2 S
+920,Chaturangini,S R2 G3 M2 P N3 S,S N3 D3 N3 P G3 M2 G3 R2 S
+921,Amritavarshini,S G3 M2 P N3 S,S N3 P M2 G3 S
+922,Chitrasindhu,S G3 M2 P N3 S,S N3 D3 P M2 G3 R2 S
+923,Churnikavinodhini,S R2 G3 M2 P D3 N3 S,S N3 D3 N3 P M2 G3 R2 S
+924,Vijayakoshalam,S R2 G3 M2 P S,S N3 P M2 G3 S
+925,67 Sucharitra,S R3 G3 M2 P D1 N1 S,S N1 D1 P M2 G3 R3 S
+926,Santhana Manjari,S R3 G3 M2 P D1 S,S N1 D1 P M2 R3 S
+927,68 Jyothiswaroopini,S R3 G3 M2 P D1 N2 S,S N2 D1 P M2 G3 R3 S
+928,Jyothi,S R3 G3 M2 P D1 N2 S,S N2 D1 P M2 G3 S
+929,Deepavarali,S R3 M2 P N2 S,S N2 P M2 G3 R3 S
+930,Jyothishmathi,S R3 G3 M2 P S,S N2 D1 M2 P M2 G3 R3 S
+931,Ramagiri,S R3 M2 G3 M2 P D1 N2 S,S D1 N2 D1 P M2 G3 R3 S
+932,69 Dhatuvardhani,S R3 G3 M2 P D1 N3 S,S N3 D1 P M2 G3 R3 S
+933,Dhowtha Panchamam,S R3 G3 M2 P N3 P S,S N3 D1 P M2 R3 G3 M2 R3 S
+934,Dhwithiyapanchamam,S R3 G3 M2 P N3 P S,S N3 D1 P M2 R3 M2 G3 R3 S
+935,Sumukham,S R3 M2 N3 S,S N3 M2 R3 S
+936,Tavapriya,S R3 M2 P N3 S,S N3 D1 P M2 G3 R3 S
+937,70 Nasikabhooshhani,S R3 G3 M2 P D2 N2 S,S N2 D2 P M2 G3 R3 S
+938,Nasamani,S R3 S M2 P D2 N2 S,S N2 D2 P M2 G3 R3 S
+939,Marakathagowla,S R3 M2 P D2 N2 S,S N2 D2 P M2 G3 R3 S
+940,Thilakamandari,S R3 M2 P D2 S,S D2 P M2 G3 R3 S
+941,71 Kosalam,S R3 G3 M2 P D2 N3 S,S N3 D2 P M2 G3 R3 S
+942,Kusumakaram,S R3 G3 M2 P D2 N3 S,S N3 D2 P M2 G3 R3 S
+943,Ayodhya,S G3 M2 P N3 S,S D2 P M2 G3 M2 R3 S
+944,72 Rasikapriya,S R3 G3 M2 P D3 N3 S,S N3 D3 P M2 G3 R3 S
+945,Rasamanjari,S R3 G3 M2 P D3 N3 S,S N3 D3 P M2 G3 R3 S
+946,Hamsagiri,S R3 G3 M2 P D3 N3 S,S N3 P D3 N3 P M2 G3 S
+947,Ishtarangini,S R3 M2 P N3 S,S N3 D3 P M2 G3 R3 S
+948,Nagagiri,S G3 M2 P D2 P S,S D2 P M2 G3 S
