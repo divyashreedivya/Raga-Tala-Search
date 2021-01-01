@@ -59,6 +59,9 @@ input[type=text]{
   background: linear-gradient(#ffd7c8, #ffaa89);
   color:#000000;
 }
+a{
+   color:#ffaa89;
+}
 .talah{
   text-align: center;
   padding:1%;
