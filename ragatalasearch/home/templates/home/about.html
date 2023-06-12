@@ -1,0 +1,37 @@
+{% extends 'base_bootstrap.html' %}
+
+{% block head %}
+<title>Raga Tala Search | About</title>
+{% endblock %}
+
+{% block body %}
+<div class='container-fluid home-div'>
+<h1>About <span class="brand">Raga Tala Search</span></h1>
+<h3>Raga and Tala Search made easy!</h3>
+<h4>Raga</h4>
+<p>There are about 950 ragas that you can search here in the following ways: </p>
+<p><strong><a href="{% url 'ragas:name' %}">Raga Search by Name:</a> </strong>Search ragas by entering the raga name</p>
+<p><strong><a href="{% url 'ragas:arohana' %}">Raga Search by Arohanam: </a></strong>Click on the swaras of the arohanam that you want to search
+and find the raga from the list of ragas </p>
+<p><strong><a href="{% url 'ragas:avarohana' %}">Raga Search by Avarohanam</a></strong>
+    Click on the swaras forming a avarohanam</p>
+<h5>Also,</h5>
+<p><strong><a href="{% url 'ragas:raga_table' %}">Melakarta table: </a></strong>
+    Click on the ragas in the melakarta table 
+to get the details of the mela raga and its janya ragas</p>
+<h4>Tala</h4>
+<p>Search from the list of talas including the 35 talas, Ashtotara shata(108) talas and Mela talas</p>
+<p><strong><a href="{% url 'talas:tala_namelist' %}">Tala search by Name: </a></strong>Enter the tala name</p>
+<p><strong><a href="{% url 'talas:tala_list' %}">Tala search by aksharas: </a></strong>Get the tala name and angams by entering aksharas</p>
+<h5>Also,</h5>
+<p><strong><a href="{% url 'talas:tala_table' %}">Tala tables</a></strong> consisting of 35 Talas table
+    , Ashtotara shata(108) talas table and Mela talas table.</p>
+</div>
+
+<footer>
+    <div>
+        Developed with ❤️ by <a href="https://divyashreedivya.github.io/music-art-portfolio"  target="_blank" rel="noopener noreferrer" >Divyashree</a>
+    </div>
+</footer>
+
+{% endblock %}

@@ -1,0 +1,86 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <link rel="stylesheet" href="{% static 'style.css' %}"> 
+
+        <link rel="apple-touch-icon" sizes="180x180" href="{% static 'apple-touch-icon.png' %}">
+        <link rel="icon" type="image/png" sizes="32x32" href="{% static 'favicon-32x32.png' %}">
+       <link rel="icon" type="image/png" sizes="16x16" href="{% static 'favicon-16x16.png' %}">
+      <link rel="manifest" href="{% static 'site.webmanifest' %}">
+        {% block head %}
+        <title>Base</title>
+        {% endblock %}
+    </head>
+    <body>
+     {% block navbar %}
+        <nav class="navbar fixed-top navbar-expand-md navbar-dark navbar-custom">
+            <!-- Brand -->
+            
+            <a class="navbar-brand" href="{% url 'home:home' %}">
+              Raga Tala Search</a>
+            <!-- Toggler/collapsibe Button -->
+            <div class="nav-pos">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+              <span class="navbar-toggler-icon"></span>
+            </button></div>
+            <!-- Navbar links -->
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                <ul class="navbar-nav ">
+               
+                <li class="nav-item" >
+                  <a class="nav-link"  href="{% url 'home:home' %}">Home</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" 
+                  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Search ragas</a>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="{% url 'ragas:name' %}">Search by Raga name</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="{% url 'ragas:arohana' %}">Search by Arohanam</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="{% url 'ragas:avarohana' %}">Search by Avarohanam</a>
+                  </div>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" 
+                  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Search talas</a>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="{% url 'talas:tala_namelist' %}">Search by Tala name</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="{% url 'talas:tala_list' %}">Search by Aksharas</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="{% url 'talas:tala_table' %}">Talas</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="{% url 'ragas:raga_table' %}">Ragas</a>
+                </li>
+              </ul>
+                <ul class="navbar-nav navbar-right">
+               <li class="nav-item">
+                 <a class="nav-link" href="{% url 'home:about' %}">About</a>
+               </li>
+                </ul> 
+                </div>
+              
+              </nav>   
+    {% endblock %}
+
+
+    {% block body %}
+    <h1>Base</h1>
+    {% endblock %}
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>  
+ 
+    {% block jsextra %}
+    {% endblock %}
+</body>
+</html>

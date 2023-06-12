@@ -1,0 +1,45 @@
+{% extends 'base_bootstrap.html' %}
+{% load static %}
+{% block head %}
+<title>Raga Tala Search | Raga Table</title>
+<link rel="stylesheet" href="{% static 'ragas/ragas.css' %}">
+{% endblock %}
+
+{% block body %}
+<div class="container-fluid">
+<button class="btn btn-b"><a href="{% url 'ragas:raga_table' %}">Back</a></button>
+<h1>{{raga.name}}</h1>
+<br>
+<div class="card">
+        <div class="card-body">
+        <div class="card-text">
+        <p><strong>Arohanam&nbsp;&nbsp;&nbsp;&nbsp;: </strong>{{raga.arohanam}}</p>
+        <p>
+        <strong>Avarohanam: </strong>    {{raga.avarohanam}}
+        </p>
+        <hr>
+
+        {% if raga.mela.num == 1 %}
+        <p>{{raga.mela.num}} st Mela</p>
+        {% elif raga.mela.num == 2 %}
+        <p>{{raga.mela.num}} nd Mela</p>
+        {% elif raga.mela.num == 3 %}
+        <p>{{raga.mela.num}} rd Mela</p>
+        {% else %}
+        <p>{{raga.mela.num}} th Mela</p>
+        {% endif %}
+        </div>
+        </div></div>
+ <h3>Janya Ragas</h3>
+ <br>
+ {% if janyas %}
+ <ul class="ul-raga">
+ {% for janya in janyas %}
+    <li class="li-raga">
+        <a href="{% url 'ragas:raga_detail' janya.id %}">{{janya.name}}</a>
+    </li>
+{% endfor %}
+</ul>
+{% endif %}
+</div>
+{% endblock %}

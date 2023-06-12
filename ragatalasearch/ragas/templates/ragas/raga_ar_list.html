@@ -1,0 +1,81 @@
+{% extends 'base_bootstrap.html' %}
+{% load static %}
+{% block head %}
+        <title>Raga Tala Search | Raga search by Arohanam</title>
+        <link rel="stylesheet" href="{% static 'ragas/ragas.css' %}"/>
+{% endblock %} 
+{% block body %}
+<div class="container-fluid">
+       <!-- <a href="{% url 'ragas:search' %}">Back</a>-->
+        <h1>Search raga by Arohanam</h1>
+        <a href="{% url 'ragas:arohana' %}">Clear</a>
+        <br><br>
+        <div class="row bts-raga">
+        <div class="col-md-3 g1">
+        <button class="btn btn-r">S</button>
+        <button class="btn btn-r">R1</button>
+        <button class="btn btn-r">R2</button>
+        <button class="btn btn-r">R3</button>
+        </div>
+        <div class="col-md-3 g2">
+        <button class="btn btn-r">G1</button>
+        <button class="btn btn-r">G2</button>
+        <button class="btn btn-r">G3</button>
+        <button class="btn btn-r">M1</button>
+        </div>
+        <div class="col-md-3 g3">
+        <button class="btn btn-r">M2</button>
+        <button class="btn btn-r">P</button>
+        <button class="btn btn-r">D1</button>
+        <button class="btn btn-r">D2</button>
+        </div>
+        <div class="col-md-3 g4">
+        <button class="btn btn-r">D3</button>
+        <button class="btn btn-r">N1</button>
+        <button class="btn btn-r">N2</button>
+        <button class="btn btn-r">N3</button>
+        </div>
+        </div>
+        <br><br>
+        <form>
+        <div class="row">
+        <div class="col-xs-9 txt">
+        <textarea name="search" id="aroh" style="resize:None"
+         {% if search %} value="{{search}}"{% endif %}></textarea></div>
+         <div class="col-xs-3 bts">
+            <button class="btn btn-s" type="submit">Search</button>
+            </div>
+        </div> 
+        </form>
+         {% if search %} 
+         <p>You searched : {{search}}</p>
+          {% if raga_list %}
+            
+          <ul class="ul-raga">
+              {% for raga in raga_list %}
+              <li class="li-raga">
+                <a href ="{% url 'ragas:raga_ar_detail' raga.id %}">{{raga.name}}</a>
+              </li>
+              {% endfor %}
+          </ul>
+          {% else %}
+              <p>No ragas</p>
+          {% endif %}    
+        {% else %}
+        <br>
+        <p class="clk">Click on the swaras!</p>
+        {% endif %}
+</div>
+{% endblock %}
+{% block jsextra %}
+
+    <script type="text/javascript">
+    $(document).ready(function(){
+        $(".btn-r").click(function(){
+            console.log("Button clicked");
+            $(this).toggleClass("active");
+            $("#aroh").append($(this).text()+" ");
+        });
+    });
+    </script>
+{% endblock %} 

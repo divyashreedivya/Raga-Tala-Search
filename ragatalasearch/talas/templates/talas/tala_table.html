@@ -1,0 +1,69 @@
+{% extends 'base_bootstrap.html' %}
+{% load static %}
+{% block head %}
+    <title>Raga Tala Search | Tala table</title>
+    <link rel="stylesheet" href="{% static 'talas/talas.css' %}">
+{% endblock %}
+
+{% block body %}
+<div class="container-fluid">
+    <a href="{% url 'talas:tala_table' %}">Clear</a>
+    <br><br>
+    <p>Click on the buttons</p>
+    <div class="row">
+        <div class="col-md-4">
+<button class="btn btnclick">Ashtothara shata(108) Talas</button>
+</div>
+<div class="col-md-4">
+<button class="btn btnclick">72 Melakarta talas</button>
+</div>
+<div class="col-md-4">
+<button class="btn btnclick">35 Talas</button>
+</div>
+</div>
+    <form>
+        <textarea name="search" id="tala" style="resize:None" class="hidethis"
+             {% if search %} value="{{search}}"{% endif %}></textarea>
+        <input class="hidethis clbtn" type="submit">
+    </form>
+   {% if search %}
+    {% if tala_table %}
+    <h2 class="talah">{{search}}</h2>
+    <div class="table table-responsive">
+      <table>
+          <tr>
+              <th>Tala</th>
+              <th>Angas</th>
+              <th>Aksharas</th>
+          </tr>
+          {% for tala in tala_table %}
+          <tr>
+              <td>{{tala.name}}</td>
+              <td>{{tala.angas}}</td>
+              <td>{{tala.aksharas}}</td>
+          </tr>
+          {% endfor %}
+      </table>
+      </div>
+      {% else %}
+      <p>No tables</p>
+      {% endif %}
+      {% else %}
+      <p></p>
+      {% endif %}
+</div>
+{% endblock %}
+
+{% block jsextra %}
+<script type="text/javascript">
+    $(document).ready(function(){
+        $(".btnclick").click(function(){
+            console.log('Button clicked');
+            $(this).toggleClass('active');
+            $("#tala").append($(this).text());
+            $(".clbtn").click();
+           
+        });
+    });
+</script>
+{% endblock %}

@@ -1,0 +1,37 @@
+{% extends 'base_bootstrap.html' %}
+{% load static %}
+{% block head %}
+        <title>Raga Tala Search | Raga detail</title>
+        <link rel="stylesheet" href="{% static 'ragas/ragas.css' %}"/>
+{% endblock %}
+{% block body %}
+<div class="container-fluid">
+<button class="btn btn-b" onclick="history.go(-1)">Back</button>
+        <h1>{{raga.name}}</h1>
+        <br>
+<div class="card">
+        <div class="card-body">
+        <div class="card-text">
+        <p><strong>Arohanam&nbsp;&nbsp;&nbsp;&nbsp;: </strong>{{raga.arohanam}}</p>
+        <p>
+        <strong>Avarohanam: </strong>    {{raga.avarohanam}}
+        </p>
+        <hr>
+        {% if raga.mela.name != raga.name %}
+        <p>Melakarta : {{raga.mela.num}} - {{raga.mela.name}}</p>
+        
+        
+        {% else %}
+        {% if raga.mela.num == 1 %}
+        <p>{{raga.mela.num}} st Mela</p>
+        {% elif raga.mela.num == 2 %}
+        <p>{{raga.mela.num}} nd Mela</p>
+        {% elif raga.mela.num == 3 %}
+        <p>{{raga.mela.num}} rd Mela</p>
+        {% else %}
+        <p>{{raga.mela.num}} th Mela</p>
+        {% endif %}
+        {% endif %}
+        </div>
+        </div></div></div>
+{% endblock %}

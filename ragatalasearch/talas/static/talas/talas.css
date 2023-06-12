@@ -1,0 +1,128 @@
+body{
+  background-color: #4c0000;
+  /*background: linear-gradient(#180101, #4c0000);*/
+  background: linear-gradient(#0f0000, #180101, #4c0000);
+  background-repeat: no-repeat;
+  /*background-size: 100% 100%;*/
+  min-height: 100vh;
+  color:#ffc0a8;
+}
+h1{
+  text-align: center;
+}
+form{
+    margin:5%;
+}
+.txt{
+    padding:0;
+}
+.bts{
+    padding:0;
+}
+input[type=text]{
+  width:100%;
+  background-color: #ffe1d5;
+  color:#000000;
+}
+.ul-tala{
+    padding:0;
+}
+.li-tala{
+  text-align: center;
+  border: solid 1px  #c3073f86;
+  border-radius: 5px;
+  padding: 2%;
+  background-color: #ffaa89;
+  text-decoration: none;
+  list-style: none;
+  width:100%;
+}
+.li-tala:hover{
+  background-color: #ff9f7a;
+}
+.li-tala a{
+  color: #000000;
+  font-weight: 500;
+}
+.btn-s{
+  background-color: #8a052d;
+}
+.btn-s:hover{
+  color:#ffffff;
+  background-color: #95002d;
+}
+.hidethis{
+    display:none;
+}
+.card{
+  background-color: #ffc0a8;
+  background: linear-gradient(#ffd7c8, #ffaa89);
+  color:#000000;
+}
+a{
+   color:#ffaa89;
+}
+.talah{
+  text-align: center;
+  padding:1%;
+}
+/* Table */
+table{
+    font-family: sans-serif;
+    color:#000000;
+    font-weight: normal;
+    line-height: 18px;
+    width:100%;
+    border-collapse: separate;
+  }
+  .table{
+    border:0;
+  }
+  table th{
+    background-color: #ffaa89;
+    background:-moz-linear-gradient(top, #ffaa89 0%,#c3073f86 100%);
+    background:-webkit-linear-gradient( #ffaa89 0%,#c3073f86 100%);
+    background:-o-linear-gradient( #ffaa89 0%,#c3073f86 100%);
+    background:linear-gradient( #ffaa89 0%,#c3073f86 100%);
+    border:2px solid #8a052d;
+    border-bottom: 5px solid#8a052d;
+    border-radius: 10px 10px 0px 0px;
+    color:#ffffff;
+    padding:2%;
+  }
+  tr>td{
+    color:#000000;
+    text-align:center;
+    background-color: #ffaa89;
+    border-radius: 0px 0px 2px 2px;
+    padding:2%;
+
+  }
+  tr>td:first-child, tr>th:first-child{
+    text-align: left;
+  }
+  tr{
+    opacity:1;
+  }
+  tr:hover{
+    opacity:0.95;
+  }
+  .btnclick{
+    width:100%;
+    margin:1%;
+    background-color: #4c0000;
+  }
+  .btnclick:hover{
+    color:#ffffff;
+    background-color: #8a052d;
+  }
+/* end table */
+
+@media all and (min-width:900px){
+    .li-tala{
+        padding: 1%;
+    }
+    tr>td:last-child, tr>th:last-child{
+        width:100px;
+     }
+}

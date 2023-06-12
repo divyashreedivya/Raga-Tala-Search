@@ -1,0 +1,11 @@
+{% extends 'base_bootstrap.html' %}
+{% block head %}
+        <title>Search Ragas</title>
+{% endblock %}
+{% block body %} 
+        <ul>
+            <li><a href="{% url 'ragas:all' %}">Search by raga name</a></li>
+            <li><a href="{% url 'ragas:arohana' %}">Search by arohana</a></li>
+            <li><a href="{% url 'ragas:avarohana' %}">Search by avarohana</a></li>
+        </ul>
+{% endblock %}

@@ -1,0 +1,35 @@
+{% extends 'base_bootstrap.html' %}
+{% load static %}
+{% block head %}
+  <title>Raga Tala Search | Raga table</title>
+  <link rel="stylesheet" href="{% static 'ragas/ragas.css' %}">
+{% endblock %}
+
+{% block body %}
+<div class="container-fluid">
+<h1>Melakarta ragas</h1>
+<br>
+{% if mela_list %}
+<div class="table table-responsive-sm">
+<table>
+  <tr>
+    <th>Mela number</th>
+    <th>Raga</th>
+  </tr>
+{% for raga in mela_list %}
+
+    <tr>
+    
+    <td> {{raga.mela.num}} &nbsp;</td>
+    <td>
+      <a href="{% url 'ragas:raga_mela_detail' raga.id %}"> {{raga.name}}</a>
+     
+    </td>
+ 
+  </tr></a>
+{% endfor %}  
+</table>
+</div>
+{% endif %}
+</div>
+{% endblock %}
