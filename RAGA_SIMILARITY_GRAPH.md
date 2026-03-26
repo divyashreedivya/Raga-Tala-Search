@@ -178,7 +178,7 @@ Where A/B are unique note sets for two ragas.
 ### Visualization Technology
 
 - **Canvas-based**: Uses HTML5 Canvas for efficient rendering
-- **Force Simulation**: D3-inspired force-directed layout
+- **Force Simulation**: Custom force-directed layout with physics simulation
 - **Physics**:
   - Repulsive forces between all node pairs
   - Attractive forces between connected nodes

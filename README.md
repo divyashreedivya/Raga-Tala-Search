@@ -32,9 +32,9 @@ A Django web application for exploring and searching Indian classical (Carnatic)
 4. **Real-time API**: Django REST Framework integration
 
 ### Architecture
-- **Backend**: Django 6.0+ with PostgreSQL/SQLite
-- **ML Framework**: PyTorch, Transformers, Sentence Transformers
-- **Frontend**: Bootstrap 4, D3.js for visualizations
+- **Backend**: Django 6.0+ with SQLite
+- **ML Framework**: Transformers, Sentence Transformers
+- **Frontend**: Bootstrap 4, HTML5 Canvas for graph visualization
 - **APIs**: RESTful endpoints for similarity search
 
 ## Installation

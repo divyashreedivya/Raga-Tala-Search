@@ -314,10 +314,10 @@ def generate_raga_similarity_graph(similarity_threshold: float = 0.3) -> Dict:
 
 def get_graph_data_for_visualization() -> Dict:
     """
-    Prepare graph data for D3.js/vis.js/react-force-graph visualization.
+    Prepare graph data for HTML5 Canvas visualization.
     
     Returns:
-        Dictionary with 'nodes' and 'links' arrays formatted for visualization
+        Dictionary with 'nodes' and 'links' arrays formatted for Canvas rendering
     """
     ragas = Raga.objects.all()
     edges = RagaEdge.objects.select_related('source_raga', 'target_raga').all()

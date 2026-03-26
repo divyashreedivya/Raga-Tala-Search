@@ -86,7 +86,7 @@ class RagaMelaDetailView(DetailView):
 def graph_data_api(request):
     """
     API endpoint to retrieve graph data for visualization.
-    Returns nodes and links for D3.js/Canvas visualizer.
+    Returns nodes and links for HTML5 Canvas visualizer.
     Supports full graph or focused subgraph around a selected raga.
     Query params:
       - raga_id: int (optional) to focus on a raga and its top neighbors
