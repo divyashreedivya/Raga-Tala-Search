@@ -1,0 +1,670 @@
+{% extends 'base_bootstrap.html' %}
+{% load static %}
+
+{% block head %}
+<title>Find Similar Ragas</title>
+<style>
+    .search-container {
+        max-width: 1000px;
+        margin: 0 auto;
+        padding: 30px 0;
+    }
+
+    .search-box {
+        position: relative;
+        margin-bottom: 30px;
+    }
+
+    .autocomplete-list {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background: #1a0101;
+        border: 1px solid #4c0000;
+        border-top: none;
+        max-height: 400px;
+        overflow-y: auto;
+        display: none;
+        z-index: 1000;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+    }
+
+    .autocomplete-list.active {
+        display: block;
+    }
+
+    .autocomplete-item {
+        padding: 12px 15px;
+        cursor: pointer;
+        border-bottom: 1px solid #4c0000;
+        transition: background-color 0.2s;
+    }
+
+    .autocomplete-item:hover {
+        background-color: #2a0101;
+    }
+
+    .autocomplete-item strong {
+        display: block;
+        font-size: 14px;
+        color: #ffaa89;
+        margin-bottom: 4px;
+    }
+
+    .autocomplete-item small {
+        display: block;
+        font-size: 11px;
+        color: #ff9f7a;
+        font-family: 'Courier New', monospace;
+    }
+
+    /* Selected Raga Display */
+    .selected-raga-display {
+        background: linear-gradient(135deg, #6f263c 0%, #621028 100%);
+        color: #ffc0a8;
+        padding: 40px;
+        border-radius: 12px;
+        margin: 30px 0;
+        box-shadow: 0 8px 30px rgba(102, 126, 234, 0.3);
+    }
+
+    .selected-raga-display .raga-name {
+        font-size: 36px;
+        font-weight: bold;
+        margin-bottom: 25px;
+        text-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+    }
+
+    .sequence-display {
+        background: rgba(255, 255, 255, 0.15);
+        padding: 18px;
+        border-radius: 10px;
+        margin-bottom: 15px;
+        border-left: 5px solid rgba(255, 255, 255, 0.6);
+        font-family: 'Courier New', monospace;
+        font-size: 16px;
+        letter-spacing: 3px;
+        line-height: 1.8;
+        backdrop-filter: blur(10px);
+    }
+
+    .sequence-label {
+        font-size: 12px;
+        font-weight: 700;
+        text-transform: uppercase;
+        opacity: 0.85;
+        margin-bottom: 10px;
+        letter-spacing: 1px;
+    }
+
+    .sequence-notes {
+        font-size: 20px;
+        word-spacing: 10px;
+    }
+
+    /* Results Section */
+    .results-header {
+        margin-top: 50px;
+        margin-bottom: 35px;
+        padding-bottom: 20px;
+        border-bottom: 3px solid #c3073f;
+    }
+
+    .results-header h3 {
+        color: #ffaa89;
+        font-weight: 700;
+        font-size: 28px;
+        margin-bottom: 10px;
+    }
+
+    .results-count {
+        font-size: 16px;
+        color: #ffc0a8;
+        font-weight: 500;
+    }
+
+    /* Similar Raga Cards */
+    .similar-raga-card {
+        background: #1a0101;
+        border: 2px solid #4c0000;
+        border-radius: 12px;
+        padding: 25px;
+        margin-bottom: 25px;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.4);
+        transition: all 0.3s ease;
+        border-left: 6px solid #c3073f;
+    }
+
+    .similar-raga-card:hover {
+        box-shadow: 0 10px 30px rgba(195, 7, 63, 0.3);
+        border-left-color: #ffaa89;
+        transform: translateY(-2px);
+    }
+
+    .raga-card-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        margin-bottom: 18px;
+        padding-bottom: 18px;
+        border-bottom: 2px solid #4c0000;
+    }
+
+    .raga-card-name-section {
+        flex: 1;
+    }
+
+    .raga-card-name {
+        font-size: 24px;
+        font-weight: 700;
+        color: #ffaa89;
+        margin-bottom: 4px;
+    }
+
+    .raga-card-index {
+        font-size: 12px;
+        font-weight: 600;
+        color: #ff9f7a;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+    }
+
+    .similarity-badge {
+        display: inline-block;
+        background: linear-gradient(135deg, #c3073f 0%, #8a052d 100%);
+        color: #ffc0a8;
+        padding: 12px 20px;
+        border-radius: 30px;
+        font-weight: bold;
+        font-size: 16px;
+        box-shadow: 0 4px 15px rgba(102, 126, 234, 0.3);
+    }
+
+    .similarity-bar {
+        width: 100%;
+        height: 8px;
+        background-color: #4c0000;
+        border-radius: 4px;
+        overflow: hidden;
+        margin: 20px 0;
+    }
+
+    .similarity-bar-fill {
+        height: 100%;
+        background: linear-gradient(90deg, #c3073f 0%, #8a052d 100%);
+        border-radius: 4px;
+        transition: width 0.5s ease;
+    }
+
+    .raga-sequences {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 18px;
+        margin: 20px 0;
+    }
+
+    .sequence-box {
+        background: linear-gradient(135deg, #2a0101 0%, #1a0101 100%);
+        padding: 16px;
+        border-radius: 10px;
+        border: 2px solid #4c0000;
+    }
+
+    .sequence-box-label {
+        font-size: 12px;
+        font-weight: 700;
+        color: #ffaa89;
+        text-transform: uppercase;
+        margin-bottom: 12px;
+        letter-spacing: 0.5px;
+    }
+
+    .sequence-box-notes {
+        font-family: 'Courier New', monospace;
+        font-size: 15px;
+        color: #ffc0a8;
+        word-break: break-word;
+        word-spacing: 5px;
+        line-height: 1.7;
+        letter-spacing: 0.5px;
+    }
+
+    .order-change {
+        display: inline-block;
+        background: rgba(255, 162, 110, 0.2);
+        border: 1px solid rgba(255, 162, 110, 0.7);
+        border-radius: 4px;
+        color: #ffb86c;
+        font-weight: 700;
+        padding: 2px 5px;
+        margin-right: 3px;
+    }
+
+    .shared-notes-info {
+        background: linear-gradient(135deg, #3a0108 0%, #2a0001 100%);
+        border: 2px solid #c3073f;
+        border-radius: 10px;
+        padding: 15px 18px;
+        margin-top: 18px;
+        font-size: 14px;
+        color: #ffc0a8;
+    }
+
+    .shared-notes-info strong {
+        color: #ffaa89;
+        font-weight: 700;
+    }
+
+    .no-results {
+        text-align: center;
+        padding: 80px 20px;
+        color: #999;
+        font-size: 18px;
+    }
+
+    .loading-spinner {
+        text-align: center;
+        padding: 60px 20px;
+        display: none;
+    }
+
+    .loading-spinner.active {
+        display: block;
+    }
+
+    .loading-spinner .spinner-border {
+        width: 4rem;
+        height: 4rem;
+    }
+
+    .error-message {
+        background-color: #f8d7da;
+        color: #721c24;
+        border: 2px solid #f5c6cb;
+        padding: 18px;
+        border-radius: 8px;
+        margin-bottom: 25px;
+        display: none;
+        font-weight: 500;
+    }
+
+    .error-message.active {
+        display: block;
+    }
+
+    .clear-btn {
+        margin-top: 40px;
+        padding: 12px 30px;
+        font-size: 16px;
+        font-weight: 600;
+    }
+
+    @media (max-width: 768px) {
+        .search-container {
+            padding: 15px;
+        }
+
+        .selected-raga-display {
+            padding: 25px;
+        }
+
+        .selected-raga-display .raga-name {
+            font-size: 28px;
+        }
+
+        .sequence-notes {
+            font-size: 16px;
+        }
+
+        .raga-sequences {
+            grid-template-columns: 1fr;
+        }
+
+        .raga-card-header {
+            flex-direction: column;
+            align-items: flex-start;
+        }
+
+        .similarity-badge {
+            margin-top: 12px;
+        }
+
+        .raga-card-name {
+            font-size: 20px;
+        }
+    }
+</style>
+{% endblock %}
+
+{% block body %}
+<div class="search-container">
+    <!-- CSRF token for AJAX requests -->
+    {% csrf_token %}
+    
+    <div style="margin-bottom: 40px;">
+        <h1 style="font-size: 40px; margin-bottom: 10px; font-weight: 700;">Find Similar Ragas</h1>
+        <p class="lead" style="font-size: 18px; color: #666;">Explore ragas with similar melodic patterns based on arohanam (ascending) and avarohanam (descending) sequences</p>
+    </div>
+
+    <div id="error-message" class="error-message"></div>
+
+    <div class="search-box">
+        <input 
+            type="text" 
+            id="raga-search" 
+            class="form-control form-control-lg" 
+            placeholder="Search for a raga (e.g., Bhairavi, Dheerashankarabharanam, Yaman)..."
+            autocomplete="off"
+            style="font-size: 16px; padding: 15px 20px;"
+        >
+        <div id="autocomplete-list" class="autocomplete-list"></div>
+    </div>
+
+    <div id="loading-spinner" class="loading-spinner">
+        <div class="spinner-border text-primary" role="status">
+            <span class="sr-only">Loading...</span>
+        </div>
+        <p class="mt-4" style="font-size: 16px;">Analyzing similar ragas...</p>
+    </div>
+
+    <div id="results-container" style="display: none;">
+        <!-- Selected Raga Display -->
+        <div id="selected-raga-card" class="selected-raga-display"></div>
+
+        <!-- Results Header -->
+        <div class="results-header">
+            <h3 id="results-title">Similar Ragas</h3>
+            <div class="results-count" id="results-count"></div>
+        </div>
+
+        <div id="no-results" class="no-results" style="display: none;">
+            No similar ragas found for this raga.
+        </div>
+
+        <!-- Similar Ragas Cards -->
+        <div id="similar-ragas-results"></div>
+
+        <button id="clear-btn" class="btn btn-secondary btn-lg clear-btn" onclick="clearSearch()">
+            <i class="fas fa-times"></i> Search Another Raga
+        </button>
+    </div>
+</div>
+
+<script>
+    const searchInput = document.getElementById('raga-search');
+    const autocompleteList = document.getElementById('autocomplete-list');
+    const resultsContainer = document.getElementById('results-container');
+    const loadingSpinner = document.getElementById('loading-spinner');
+    const errorMessage = document.getElementById('error-message');
+    
+    let ragas = [];
+    let selectedRaga = null;
+
+    // Load all ragas for autocomplete
+    function loadRagas() {
+        fetch('/ragas/api/graph/data/')
+            .then(response => response.json())
+            .then(data => {
+                ragas = data.nodes || [];
+            })
+            .catch(error => {
+                console.error('Error loading ragas:', error);
+                showError('Failed to load ragas list');
+            });
+    }
+
+    // Filter ragas as user types
+    searchInput.addEventListener('input', (e) => {
+        const query = e.target.value.toLowerCase().trim();
+
+        if (query.length === 0) {
+            autocompleteList.classList.remove('active');
+            return;
+        }
+
+        const filtered = ragas.filter(raga => 
+            raga.name.toLowerCase().includes(query)
+        ).slice(0, 20);
+
+        if (filtered.length === 0) {
+            autocompleteList.classList.remove('active');
+            return;
+        }
+
+        // Display autocomplete list
+        autocompleteList.innerHTML = filtered.map(raga => `
+            <div class="autocomplete-item" onclick="selectRaga(${raga.id}, '${raga.name.replace(/'/g, "\\'")}')">
+                <strong>${raga.name}</strong>
+                <small>↑ ${raga.arohanam}</small>
+                <small>↓ ${raga.avarohanam}</small>
+            </div>
+        `).join('');
+
+        autocompleteList.classList.add('active');
+    });
+
+    // Handle keyboard navigation and clicks
+    document.addEventListener('click', (e) => {
+        if (e.target !== searchInput && !autocompleteList.contains(e.target)) {
+            autocompleteList.classList.remove('active');
+        }
+    });
+
+    function selectRaga(ragaId, ragaName) {
+        searchInput.value = ragaName;
+        autocompleteList.classList.remove('active');
+        selectedRaga = { id: ragaId, name: ragaName };
+        findSimilarRagas(ragaId);
+    }
+
+    function findSimilarRagas(ragaId) {
+        showLoading(true);
+        resultsContainer.style.display = 'none';
+
+        // Use semantic similarity API instead of graph neighbors
+        fetch('/ragas/api/similarity/search/', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+                'X-CSRFToken': getCSRFToken()
+            },
+            body: JSON.stringify({
+                raga_id: ragaId,
+                top_k: 15
+            })
+        })
+        .then(response => {
+            if (!response.ok) {
+                if (response.status === 400) {
+                    return response.json().then(data => {
+                        throw new Error(data.error || 'Bad request');
+                    });
+                }
+                throw new Error('Failed to find similar ragas');
+            }
+            return response.json();
+        })
+        .then(data => {
+            displaySemanticResults(data);
+            showLoading(false);
+        })
+        .catch(error => {
+            showLoading(false);
+            showError('Error finding similar ragas: ' + error.message);
+            console.error('Error:', error);
+        });
+    }
+
+    function getNotes(sequence) {
+        if (!sequence || !sequence.trim()) return [];
+        return sequence
+            .trim()
+            .split(/\s+/)
+            .map(note => note.trim())
+            .filter(Boolean);
+    }
+
+    function formatOrderDiff(querySeq, candidateSeq, label) {
+        const changes = [];
+        const maxLen = Math.max(querySeq.length, candidateSeq.length);
+        for (let i = 0; i < maxLen; i++) {
+            const qn = querySeq[i] || '—';
+            const cn = candidateSeq[i] || '—';
+            if (qn !== cn) {
+                changes.push(`${label} pos ${i + 1}: ${qn} → ${cn}`);
+            }
+        }
+        return changes;
+    }
+
+    function highlightSequenceWithOrder(querySeq, candidateSeq) {
+        const maxLen = Math.max(querySeq.length, candidateSeq.length);
+        return Array.from({ length: maxLen }, (_, i) => {
+            const queryNote = querySeq[i] || '—';
+            const candNote = candidateSeq[i] || '—';
+            if (queryNote !== candNote) {
+                return `<span class="order-change">${candNote}</span>`;
+            }
+            return `<span>${candNote}</span>`;
+        }).join(' ');
+    }
+
+    function displaySemanticResults(data) {
+        const query = data.query;
+        const results = data.results || [];
+
+        const queryNotes = [...new Set([...getNotes(query.arohanam), ...getNotes(query.avarohanam)])];
+        const queryNotesSet = new Set(queryNotes);
+
+        // Display selected raga prominently
+        document.getElementById('selected-raga-card').innerHTML = `
+            <div class="raga-name">${query.name}</div>
+            <div class="sequence-display">
+                <div class="sequence-label">↑ Arohanam (Ascending)</div>
+                <div class="sequence-notes">${query.arohanam || 'N/A'}</div>
+            </div>
+            <div class="sequence-display">
+                <div class="sequence-label">↓ Avarohanam (Descending)</div>
+                <div class="sequence-notes">${query.avarohanam || 'N/A'}</div>
+            </div>
+        `;
+
+        // Display results
+        const resultsDiv = document.getElementById('similar-ragas-results');
+        
+        if (results.length === 0) {
+            document.getElementById('no-results').style.display = 'block';
+            resultsDiv.innerHTML = '';
+        } else {
+            document.getElementById('no-results').style.display = 'none';
+            document.getElementById('results-count').textContent = 
+                `Top Matches: Showing top ${results.length} similar ragas (using ML semantic similarity)`;
+
+            resultsDiv.innerHTML = results.map((sr, index) => {
+                const similarity = (sr.similarity_score * 100).toFixed(1);
+
+                const candidateNotes = [...new Set([...getNotes(sr.arohanam), ...getNotes(sr.avarohanam)])];
+                const candidateNotesSet = new Set(candidateNotes);
+                const shared = [...queryNotesSet].filter(note => candidateNotesSet.has(note));
+                const queryOnly = [...queryNotesSet].filter(note => !candidateNotesSet.has(note));
+                const candidateOnly = candidateNotes.filter(note => !queryNotesSet.has(note));
+
+                const queryAro = getNotes(query.arohanam);
+                const queryAva = getNotes(query.avarohanam);
+                const candidateAro = getNotes(sr.arohanam);
+                const candidateAva = getNotes(sr.avarohanam);
+
+                let diffMessage = 'None';
+                if (queryOnly.length === 1 && candidateOnly.length === 1) {
+                    diffMessage = `${queryOnly[0]} → ${candidateOnly[0]}`;
+                } else if (queryOnly.length && candidateOnly.length && queryOnly.length === candidateOnly.length) {
+                    diffMessage = queryOnly.map((n, i) => `${n} → ${candidateOnly[i]}`).join(', ');
+                } else if (queryOnly.length || candidateOnly.length) {
+                    const qOnly = queryOnly.length ? `Searched-raga-only: ${queryOnly.join(', ')}` : '';
+                    const cOnly = candidateOnly.length ? `Similar-raga-only: ${candidateOnly.join(', ')}` : '';
+                    diffMessage = [qOnly, cOnly].filter(Boolean).join(' ; ');
+                }
+
+                const highlightedAro = highlightSequenceWithOrder(queryAro, candidateAro);
+                const highlightedAva = highlightSequenceWithOrder(queryAva, candidateAva);
+
+                const orderDiffs = [
+                    ...formatOrderDiff(queryAro, candidateAro, 'Arohanam'),
+                    ...formatOrderDiff(queryAva, candidateAva, 'Avarohanam')
+                ];
+
+                if (orderDiffs.length) {
+                    const orderText = orderDiffs.map(d => d.replace('Arohanam ', '').replace('Avarohanam ', '')).join(' ; ');
+                    const orderFriendly = `Melodic order changes: ${orderText}`;
+                    diffMessage = diffMessage === 'None' ? orderFriendly : `${diffMessage} ; ${orderFriendly}`;
+                }
+
+                return `
+                    <div class="similar-raga-card">
+                        <div class="raga-card-header">
+                            <div class="raga-card-name-section">
+                                <div class="raga-card-name">${index + 1}. ${sr.name}</div>
+                                ${sr.mela ? `<div class="raga-card-index">Mela ${sr.mela_num}: ${sr.mela}</div>` : ''}
+                            </div>
+                            <div class="similarity-badge">
+                                ${similarity}% Similar
+                            </div>
+                        </div>
+
+                        <div class="similarity-bar">
+                            <div class="similarity-bar-fill" style="width: ${similarity}%"></div>
+                        </div>
+
+                        <div class="raga-sequences">
+                            <div class="sequence-box">
+                                <div class="sequence-box-label">↑ Arohanam</div>
+                                <div class="sequence-box-notes">${highlightedAro}</div>
+                            </div>
+                            <div class="sequence-box">
+                                <div class="sequence-box-label">↓ Avarohanam</div>
+                                <div class="sequence-box-notes">${highlightedAva}</div>
+                            </div>
+                        </div>
+
+                        <div class="shared-notes-info">
+                            <strong>Shared notes:</strong> ${shared.length ? shared.join(', ') : 'None'}<br />
+                            <strong>Searched raga-only notes:</strong> ${queryOnly.length ? queryOnly.join(', ') : 'None'}<br />
+                            <strong>Similar raga-only notes:</strong> ${candidateOnly.length ? candidateOnly.join(', ') : 'None'}<br />
+                        </div>
+                    </div>
+                `;
+            }).join('');
+        }
+
+        resultsContainer.style.display = 'block';
+    }
+
+    function showLoading(show) {
+        loadingSpinner.classList.toggle('active', show);
+    }
+
+    function showError(message) {
+        errorMessage.textContent = message;
+        errorMessage.classList.add('active');
+        setTimeout(() => errorMessage.classList.remove('active'), 5000);
+    }
+
+    function clearSearch() {
+        searchInput.value = '';
+        resultsContainer.style.display = 'none';
+        selectedRaga = null;
+        errorMessage.classList.remove('active');
+        searchInput.focus();
+    }
+
+    // Load ragas on page load
+    loadRagas();
+
+    // Helper function to get CSRF token
+    function getCSRFToken() {
+        const csrfToken = document.querySelector('[name=csrfmiddlewaretoken]');
+        return csrfToken ? csrfToken.value : '';
+    }
+</script>
+{% endblock %}

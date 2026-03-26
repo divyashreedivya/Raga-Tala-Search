@@ -1,0 +1,417 @@
+{% extends 'base_bootstrap.html' %}
+{% load static %}
+
+{% block head %}
+<title>Raga Similarity Graph</title>
+{% endblock %}
+
+{% block body %}
+<style>
+    .graph-container {
+        width: 100%;
+        height: 72vh;
+        border: 2px solid #c3073f;
+        border-radius: 12px;
+        margin-bottom: 20px;
+        background: linear-gradient(145deg, #140202, #1d0a0e);
+        box-shadow: 0 8px 25px rgba(0,0,0,0.4);
+    }
+
+    .stat-card {
+        background: #1f0406;
+        padding: 15px;
+        border-radius: 10px;
+        box-shadow: 0 2px 10px rgba(0,0,0,0.25);
+        text-align: center;
+        border: 1px solid #4c0000;
+    }
+
+    .stat-value {
+        font-size: 26px;
+        font-weight: bold;
+        color: #ffb86c;
+    }
+
+    .stat-label {
+        font-size: 13px;
+        color: #f7d1b3;
+        margin-top: 6px;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+    }
+
+    .info-box {
+        background: #2e0411;
+        border: 1px solid #c3073f;
+        border-radius: 10px;
+        padding: 14px;
+        margin-bottom: 15px;
+        color: #ffc0a8;
+        font-size: 14px;
+        box-shadow: 0 2px 12px rgba(0,0,0,0.3);
+    }
+
+    .loading-spinner {
+        text-align: center;
+        padding: 20px;
+    }
+
+    .error-message, .success-message {
+        padding: 15px;
+        margin-bottom: 20px;
+        border-radius: 4px;
+        display: none;
+    }
+
+    .error-message {
+        background-color: #f8d7da;
+        color: #721c24;
+        border: 1px solid #f5c6cb;
+    }
+
+    .error-message.active, .success-message.active {
+        display: block;
+    }
+
+    .success-message {
+        background-color: #d4edda;
+        color: #155724;
+        border: 1px solid #c3e6cb;
+    }
+</style>
+
+<div class="container-fluid py-5">
+    <div class="row mb-4">
+        <div class="col-md-12">
+            <h1>Raga Similarity Graph</h1>
+            <p class="lead">Explore relationships between ragas based on shared notes in arohanam and avarohanam</p>
+        </div>
+    </div>
+
+    <div id="error-message" class="error-message"></div>
+    <div id="success-message" class="success-message"></div>
+
+    <div class="info-box">
+        <strong>Info:</strong> The graph contains {{ ragas_count }} ragas with {{ edges_count }} similarity relationships. 
+        Click the button below to load and visualize the graph. This may take a moment as there are many connections.
+    </div>
+
+    <!-- Statistics -->
+    <div class="row mb-4">
+        <div class="col-md-3">
+            <div class="stat-card">
+                <div class="stat-value">{{ ragas_count }}</div>
+                <div class="stat-label">Total Ragas</div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="stat-card">
+                <div class="stat-value">{{ edges_count }}</div>
+                <div class="stat-label">Similarity Edges</div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="stat-card">
+                <div class="stat-value">{{ avg_similarity|floatformat:3 }}</div>
+                <div class="stat-label">Avg Similarity</div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="stat-card">
+                <div class="stat-value">{{ edges_count|add:0 }}</div>
+                <div class="stat-label">Graph Density</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Controls -->
+    <div class="row mb-4">
+        <div class="col-md-4">
+            <label for="raga-selector">Focus on Raga (optional):</label>
+            <select id="raga-selector" class="form-control">
+                <option value="">All Ragas</option>
+                {% for raga in raga_list %}
+                    <option value="{{ raga.id }}">{{ raga.name }}</option>
+                {% endfor %}
+            </select>
+        </div>
+        <div class="col-md-3">
+            <label for="max-neighbors">Max neighbors:</label>
+            <input type="number" id="max-neighbors" class="form-control" value="30" min="5" max="200" />
+        </div>
+        <div class="col-md-5" style="display:flex; align-items:flex-end; gap:10px;">
+            <button type="button" class="btn btn-primary btn-lg" onclick="loadGraphData()">
+                <i class="fas fa-play"></i> Load Graph Visualization
+            </button>
+            <button type="button" class="btn btn-secondary btn-lg" onclick="rebuildGraph()">
+                <i class="fas fa-sync"></i> Rebuild Graph
+            </button>
+        </div>
+    </div>
+
+    <!-- Graph Container -->
+    <div id="loading-spinner" class="loading-spinner">
+        <div class="spinner-border text-primary" role="status">
+            <span class="sr-only">Loading...</span>
+        </div>
+        <p class="mt-3">Loading graph data... This may take a moment due to the large number of connections.</p>
+    </div>
+
+    <canvas id="graph-canvas" class="graph-container" style="display: none;">
+        Your browser does not support the HTML5 canvas element. Please use a modern browser.
+    </canvas>
+
+    <div id="info-panel" style="display: none; margin-top: 20px;">
+        <h3>Node Information</h3>
+        <div id="node-info" style="background: white; padding: 15px; border-radius: 4px;"></div>
+    </div>
+</div>
+
+<script>
+    let graphData = null;
+    let canvas = null;
+    let ctx = null;
+    let simulation = { nodes: [], links: [], alpha: 1, alphaDecay: 0.03, alphaMin: 0.001 };
+    let selectedNode = null;
+
+    function showLoading(show = true) {
+        document.getElementById('loading-spinner').style.display = show ? 'block' : 'none';
+    }
+
+    function showError(message) {
+        const el = document.getElementById('error-message');
+        el.textContent = message;
+        el.classList.add('active');
+        setTimeout(() => el.classList.remove('active'), 5000);
+    }
+
+    function showSuccess(message) {
+        const el = document.getElementById('success-message');
+        el.textContent = message;
+        el.classList.add('active');
+        setTimeout(() => el.classList.remove('active'), 3000);
+    }
+
+    function loadGraphData() {
+        showLoading(true);
+
+        const selectedRagaId = document.getElementById('raga-selector').value;
+        const maxNeighbors = document.getElementById('max-neighbors').value || 30;
+
+        let url = '/ragas/api/graph/data/';
+        const params = [];
+        if (selectedRagaId) {
+            params.push(`raga_id=${selectedRagaId}`);
+            params.push(`max_neighbors=${Math.max(5, Math.min(200, parseInt(maxNeighbors, 10) || 30))}`);
+        }
+
+        if (params.length > 0) {
+            url += '?' + params.join('&');
+        }
+
+        fetch(url)
+            .then(response => {
+                if (!response.ok) throw new Error('API error: ' + response.status);
+                return response.json();
+            })
+            .then(data => {
+                if (data.error) throw new Error(data.error);
+                graphData = data;
+                initializeGraph();
+                showLoading(false);
+                if (selectedRagaId) {
+                    showSuccess(`Focused graph loaded with ${graphData.total_nodes} ragas and ${graphData.total_links} links`);
+                } else {
+                    showSuccess('Full graph loaded successfully!');
+                }
+            })
+            .catch(error => {
+                showLoading(false);
+                showError('Error loading graph data: ' + error.message);
+                console.error('Error:', error);
+            });
+    }
+
+    function initializeGraph() {
+        canvas = document.getElementById('graph-canvas');
+        canvas.style.display = 'block';
+        ctx = canvas.getContext('2d');
+
+        // Adjust canvas size
+        canvas.width = canvas.clientWidth;
+        canvas.height = canvas.clientHeight;
+
+        // Initialize simulation
+        simulation.nodes = graphData.nodes.map(n => ({
+            ...n,
+            x: Math.random() * canvas.width,
+            y: Math.random() * canvas.height,
+            vx: 0,
+            vy: 0,
+            r: Math.sqrt(n.note_count) * 3 + 5
+        }));
+
+        simulation.links = graphData.links;
+        simulation.alpha = 1;
+
+        // Start animation loop
+        animate();
+
+        // Mouse interaction
+        canvas.addEventListener('click', (e) => {
+            const rect = canvas.getBoundingClientRect();
+            const x = e.clientX - rect.left;
+            const y = e.clientY - rect.top;
+
+            for (let i = 0; i < simulation.nodes.length; i++) {
+                const dx = simulation.nodes[i].x - x;
+                const dy = simulation.nodes[i].y - y;
+                if (dx * dx + dy * dy < simulation.nodes[i].r * simulation.nodes[i].r) {
+                    selectedNode = simulation.nodes[i];
+                    showNodeInfo(simulation.nodes[i]);
+                    break;
+                }
+            }
+        });
+    }
+
+    function animate() {
+        // Apply forces
+        const strength = 30;
+        const maxDist = 120;
+
+        // Reset forces
+        simulation.nodes.forEach(n => {
+            n.fx = 0;
+            n.fy = 0;
+        });
+
+        // Repulsive forces
+        for (let i = 0; i < simulation.nodes.length; i++) {
+            for (let j = i + 1; j < simulation.nodes.length; j++) {
+                const a = simulation.nodes[i];
+                const b = simulation.nodes[j];
+                const dx = b.x - a.x || 1e-6;
+                const dy = b.y - a.y || 1e-6;
+                const dist = Math.sqrt(dx * dx + dy * dy);
+                const force = strength / (dist * dist);
+
+                a.fx -= force * dx / dist;
+                a.fy -= force * dy / dist;
+                b.fx += force * dx / dist;
+                b.fy += force * dy / dist;
+            }
+        }
+
+        // Attractive forces
+        simulation.links.forEach(link => {
+            const a = simulation.nodes.find(n => n.id === link.source);
+            const b = simulation.nodes.find(n => n.id === link.target);
+            if (!a || !b) return;
+
+            const dx = b.x - a.x;
+            const dy = b.y - a.y;
+            const dist = Math.sqrt(dx * dx + dy * dy) || 1e-6;
+            const linkForce = 0.1 * (dist - maxDist);
+
+            a.fx += linkForce * dx / dist;
+            a.fy += linkForce * dy / dist;
+            b.fx -= linkForce * dx / dist;
+            b.fy -= linkForce * dy / dist;
+        });
+
+        // Apply velocity
+        simulation.nodes.forEach(n => {
+            n.vx = (n.fx ?? 0) * simulation.alpha;
+            n.vy = (n.fy ?? 0) * simulation.alpha;
+            n.vx *= 0.95;
+            n.vy *= 0.95;
+            n.x += n.vx;
+            n.y += n.vy;
+
+            // Boundary
+            if (n.x - n.r < 0) n.x = n.r;
+            if (n.x + n.r > canvas.width) n.x = canvas.width - n.r;
+            if (n.y - n.r < 0) n.y = n.r;
+            if (n.y + n.r > canvas.height) n.y = canvas.height - n.r;
+        });
+
+        // Render
+        ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+        // Draw links
+        ctx.strokeStyle = '#ddd';
+        simulation.links.forEach(link => {
+            const a = simulation.nodes.find(n => n.id === link.source);
+            const b = simulation.nodes.find(n => n.id === link.target);
+            if (!a || !b) return;
+            ctx.lineWidth = 0.5 + link.weight * 2;
+            ctx.beginPath();
+            ctx.moveTo(a.x, a.y);
+            ctx.lineTo(b.x, b.y);
+            ctx.stroke();
+        });
+
+        // Draw nodes
+        simulation.nodes.forEach(node => {
+            ctx.fillStyle = node === selectedNode ? '#ff6b6b' : '#4a90e2';
+            ctx.beginPath();
+            ctx.arc(node.x, node.y, node.r, 0, 2 * Math.PI);
+            ctx.fill();
+
+            ctx.fillStyle = '#fff';
+            ctx.textAlign = 'center';
+            ctx.textBaseline = 'middle';
+            ctx.font = 'bold 9px Arial';
+            ctx.fillText(node.name.substring(0, 2), node.x, node.y);
+        });
+
+        simulation.alpha -= simulation.alphaDecay;
+        if (simulation.alpha > simulation.alphaMin) {
+            requestAnimationFrame(animate);
+        }
+    }
+
+    function showNodeInfo(node) {
+        const infoPanel = document.getElementById('info-panel');
+        const infoDiv = document.getElementById('node-info');
+
+        let html = `<h5>${node.name}</h5>`;
+        html += `<p><strong>Arohanam:</strong> ${node.arohanam}</p>`;
+        html += `<p><strong>Avarohanam:</strong> ${node.avarohanam}</p>`;
+        html += `<p><strong>Unique Notes:</strong> ${node.note_count}</p>`;
+
+        // Get similar ragas
+        const relatedLinks = simulation.links.filter(l => l.source === node.id || l.target === node.id);
+        if (relatedLinks.length > 0) {
+            html += `<h6>Similar Ragas (Top 10):</h6><ul>`;
+            relatedLinks.sort((a, b) => b.weight - a.weight).slice(0, 10).forEach(link => {
+                const relatedId = link.source === node.id ? link.target : link.source;
+                const relatedNode = simulation.nodes.find(n => n.id === relatedId);
+                if (relatedNode) {
+                    html += `<li>${relatedNode.name}: ${(link.weight * 100).toFixed(1)}% similar</li>`;
+                }
+            });
+            html += '</ul>';
+        }
+
+        infoDiv.innerHTML = html;
+        infoPanel.style.display = 'block';
+    }
+
+    function rebuildGraph() {
+        showLoading(true);
+        fetch('/ragas/api/graph/build/?threshold=0.3', { method: 'POST' })
+            .then(response => response.json())
+            .then(data => {
+                loadGraphData();
+                showSuccess('Graph rebuilt successfully!');
+            })
+            .catch(error => {
+                showLoading(false);
+                showError('Error rebuilding graph: ' + error);
+            });
+    }
+</script>
+{% endblock %}
+
